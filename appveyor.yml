@@ -1,0 +1,94 @@
+#---------------------------------#
+#      general configuration      #
+#---------------------------------#
+
+# version format
+version: 0.1.0.{build}
+
+# branches to build
+branches:
+  # whitelist
+  only:
+    - master
+
+# Maximum number of concurrent jobs for the project
+max_jobs: 1
+  
+#---------------------------------#
+#    environment configuration    #
+#---------------------------------#
+
+# Build worker image (VM template)
+image: Visual Studio 2017
+
+# scripts that are called at very beginning, before repo cloning
+init:
+#  - ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+  - cmd: git config --global core.autocrlf input
+
+# clone directory
+clone_folder: c:\cwmodular
+
+# fetch repository as zip archive
+shallow_clone: true                 # default is "false"
+
+# scripts that run after cloning repository
+install:
+  - cmd: cd c:\
+  - cmd: git clone --recursive --depth 1 -j8 https://github.com/steinbergmedia/vst3sdk.git
+  - cmd: git clone --depth 1 https://github.com/WeAreROLI/JUCE.git -b develop
+  - cmd: git clone --depth 1 https://github.com/bcmodular/scopesync-shared.git
+  - ps: (Get-Content -Path "c:/JUCE/extras/Projucer/JuceLibraryCode/AppConfig.h") | ForEach-Object {$_ -Replace "#define JUCER_ENABLE_GPL_MODE 0", "#define JUCER_ENABLE_GPL_MODE 1"} | Set-Content -Path "c:/JUCE/extras/Projucer/JuceLibraryCode/AppConfig.h"
+  - cmd: msbuild c:/JUCE/extras/Projucer/Builds/VisualStudio2017/Projucer.sln /property:Platform=x64
+  - cmd: c:\JUCE\extras\Projucer\Builds\VisualStudio2017\x64\Debug\App\Projucer.exe --resave C:\scopesync\Builds\ScopeSyncFX\ScopeSyncFX.jucer
+  - cmd: c:\JUCE\extras\Projucer\Builds\VisualStudio2017\x64\Debug\App\Projucer.exe --resave C:\scopesync\Builds\ScopeSyncInstPlugin\ScopeSyncInstPlugin.jucer
+  - cmd: c:\JUCE\extras\Projucer\Builds\VisualStudio2017\x64\Debug\App\Projucer.exe --resave C:\scopesync\Builds\ScopeSyncEffectPlugin\ScopeSyncEffectPlugin.jucer
+  - cmd: cd c:\scopesync
+  - cmd: mkdir MS
+  - cmd: cd MS
+  - ps: Start-FileDownload 'https://aka.ms/vs/15/release/vc_redist.x86.exe'
+  - ps: Start-FileDownload 'https://aka.ms/vs/15/release/vc_redist.x64.exe'
+  
+#---------------------------------#
+#       build configuration       #
+#---------------------------------#
+
+#on_finish:
+#  - ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+
+# scripts to run before build
+before_build:
+
+# scripts to run after build
+after_build:
+  - cmd: set PATH=%PATH%;"C:\\Program Files (x86)\\Inno Setup 5"  
+  - cmd: cd "c:\cwmodular\Setup Script"
+  - cmd: iscc CWModular.iss
+  - cmd: cd Output
+  - cmd: mv mysetup.exe setup.exe
+  - cmd: 7z a %APPVEYOR_BUILD_VERSION%.zip setup.exe
+  - cmd: mv %APPVEYOR_BUILD_VERSION%.zip ..\..
+
+# to run your custom scripts instead of automatic MSBuild
+build_script:
+  - cmd: msbuild C:\cwmodular\CMS-1\ScopeModuleBuild\Builds\VisualStudio2017\CMS-1.sln /p:Configuration=Release /property:Platform=Win32
+  - cmd: cd C:\cwmodular\CMS-1\PluginBuild\Builds\VisualStudio2017
+  - cmd: msbuild CMS-1.sln /t:Rebuild /p:Configuration=Release /property:Platform=Win32
+  - cmd: msbuild CMS-1.sln /t:Rebuild /p:Configuration=Release_x64 /property:Platform=x64
+
+#---------------------------------#
+#       deployment configuration  #
+#---------------------------------#
+artifacts:
+  - path: $(APPVEYOR_BUILD_VERSION).zip
+    name: setup
+
+#deploy:
+#  provider: S3
+#  access_key_id: $(ARTIFACTS_KEY) 
+#  secret_access_key: $(ARTIFACTS_SECRET) 
+#  bucket: $(ARTIFACTS_BUCKET)
+#  region: eu-central-1
+#  folder: builds
+#  artifact: setup
+  
