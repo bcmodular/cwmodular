@@ -288,126 +288,9 @@
       </GROUP>
     </GROUP>
     <GROUP id="{68C90446-4556-32A6-1CD4-B42B54FF9B74}" name="Resources">
-      <GROUP id="{E2B30576-0D7F-762D-CC62-FF07480120AE}" name="font">
-        <FILE id="ERhPem" name="erbos_draco_1st_nbp.ttf" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/font/erbos_draco_1st_nbp.ttf"/>
-        <FILE id="qUxj3q" name="erbos_draco_1st_open_nbp.ttf" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/font/erbos_draco_1st_open_nbp.ttf"/>
-        <FILE id="z31Kzq" name="Montserrat-Bold.ttf" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/font/Montserrat-Bold.ttf"/>
-        <FILE id="u4jdFj" name="Montserrat-Regular.ttf" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/font/Montserrat-Regular.ttf"/>
-      </GROUP>
+      <GROUP id="{E2B30576-0D7F-762D-CC62-FF07480120AE}" name="font"/>
       <GROUP id="{F45AA97D-12AE-D080-9C4E-E63580304EE9}" name="image">
-        <FILE id="opfMv0" name="Close_button_off.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/Close_button_off.png"/>
-        <FILE id="D3AqJY" name="Close_button_on.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/Close_button_on.png"/>
-        <FILE id="Xl0aHo" name="Close_button_over.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/Close_button_over.png"/>
-        <FILE id="KoNMRR" name="config_manager_button_off.png" compile="0"
-              resource="1" file="../../../scopesync-shared/Resources/image/config_manager_button_off.png"/>
-        <FILE id="bkUVL1" name="config_manager_button_on.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/config_manager_button_on.png"/>
-        <FILE id="jyAeiN" name="config_manager_button_over.png" compile="0"
-              resource="1" file="../../../scopesync-shared/Resources/image/config_manager_button_over.png"/>
-        <FILE id="HShLOo" name="confirm_button_off.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/confirm_button_off.png"/>
-        <FILE id="WTnps5" name="confirm_button_on.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/confirm_button_on.png"/>
-        <FILE id="w1QQOO" name="confirm_button_over.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/confirm_button_over.png"/>
-        <FILE id="qzZWOw" name="Copy_button_off.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/Copy_button_off.png"/>
-        <FILE id="pHEq3h" name="Copy_button_on.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/Copy_button_on.png"/>
-        <FILE id="j3WMV1" name="Copy_button_over.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/Copy_button_over.png"/>
         <FILE id="mDMyWw" name="divider.png" compile="0" resource="1" file="../../../scopesync-shared/Resources/image/divider.png"/>
-        <FILE id="Hl6bL9" name="FXbypass_button_off.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/FXbypass_button_off.png"/>
-        <FILE id="R3Cpcc" name="FXbypass_button_on.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/FXbypass_button_on.png"/>
-        <FILE id="bmBrUp" name="FXbypass_button_over.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/FXbypass_button_over.png"/>
-        <FILE id="Kd2BJE" name="FXmono_button_off.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/FXmono_button_off.png"/>
-        <FILE id="TeAset" name="FXmono_button_on.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/FXmono_button_on.png"/>
-        <FILE id="lKRgpO" name="FXmono_button_over.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/FXmono_button_over.png"/>
-        <FILE id="iHyzlT" name="help_button_off.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/help_button_off.png"/>
-        <FILE id="HoEBsl" name="help_button_on.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/help_button_on.png"/>
-        <FILE id="XpEIGa" name="help_button_over.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/help_button_over.png"/>
-        <FILE id="l7PwF6" name="load_config_button_off.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/load_config_button_off.png"/>
-        <FILE id="Fqgxm2" name="load_config_button_on.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/load_config_button_on.png"/>
-        <FILE id="gzzu8m" name="load_config_button_over.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/load_config_button_over.png"/>
-        <FILE id="uE7AC8" name="NewConfig_button_off.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/NewConfig_button_off.png"/>
-        <FILE id="ephw3t" name="NewConfig_button_on.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/NewConfig_button_on.png"/>
-        <FILE id="vf8KoL" name="NewConfig_button_over.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/NewConfig_button_over.png"/>
-        <FILE id="oxUAtP" name="Paste_button_off.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/Paste_button_off.png"/>
-        <FILE id="GmpD9N" name="Paste_button_on.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/Paste_button_on.png"/>
-        <FILE id="aEk2j4" name="Paste_button_over.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/Paste_button_over.png"/>
-        <FILE id="eZTK5Y" name="Patch_Window_button_off.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/Patch_Window_button_off.png"/>
-        <FILE id="kjMRnc" name="Patch_Window_button_on.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/Patch_Window_button_on.png"/>
-        <FILE id="JmojHj" name="Patch_Window_button_over.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/Patch_Window_button_over.png"/>
-        <FILE id="EVHs2s" name="Perf_Mode_button_off.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/Perf_Mode_button_off.png"/>
-        <FILE id="v1FgDC" name="Perf_Mode_button_on.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/Perf_Mode_button_on.png"/>
-        <FILE id="cC9ZUz" name="Perf_Mode_button_over.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/Perf_Mode_button_over.png"/>
-        <FILE id="jyJHFf" name="Presets_button_off.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/Presets_button_off.png"/>
-        <FILE id="rs2G1R" name="Presets_button_on.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/Presets_button_on.png"/>
-        <FILE id="pdNX2B" name="Presets_button_over.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/Presets_button_over.png"/>
-        <FILE id="txzBO6" name="Redo_button_off.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/Redo_button_off.png"/>
-        <FILE id="lmPwI2" name="Redo_button_on.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/Redo_button_on.png"/>
-        <FILE id="yTIKkM" name="Redo_button_over.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/Redo_button_over.png"/>
-        <FILE id="EEi7FJ" name="reload_button_off.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/reload_button_off.png"/>
-        <FILE id="QqAhXw" name="reload_button_on.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/reload_button_on.png"/>
-        <FILE id="iPrAxp" name="reload_button_over.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/reload_button_over.png"/>
-        <FILE id="R078He" name="remove_button_off.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/remove_button_off.png"/>
-        <FILE id="Pm0Xvc" name="remove_button_on.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/remove_button_on.png"/>
-        <FILE id="B4r4W0" name="remove_button_over.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/remove_button_over.png"/>
-        <FILE id="AImsMN" name="Save_button_off.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/Save_button_off.png"/>
-        <FILE id="EhkNJW" name="Save_button_on.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/Save_button_on.png"/>
-        <FILE id="B0Kjih" name="Save_button_over.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/Save_button_over.png"/>
-        <FILE id="FyykUL" name="SaveAs_button_off.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/SaveAs_button_off.png"/>
-        <FILE id="Q5iERv" name="SaveAs_button_on.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/SaveAs_button_on.png"/>
-        <FILE id="prLJ20" name="SaveAs_button_over.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/SaveAs_button_over.png"/>
         <FILE id="Kaqba0" name="ScopeSync_Logo.png" compile="0" resource="1"
               file="../../../scopesync-shared/Resources/image/ScopeSync_Logo.png"/>
         <FILE id="gicNwg" name="ScopeSync_Logo_off.png" compile="0" resource="1"
@@ -426,20 +309,6 @@
               file="../../../scopesync-shared/Resources/image/Snapshot_button_on.png"/>
         <FILE id="TyGEQL" name="Snapshot_button_over.png" compile="0" resource="1"
               file="../../../scopesync-shared/Resources/image/Snapshot_button_over.png"/>
-        <FILE id="t2nmGb" name="toolbar_bevel.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/toolbar_bevel.png"/>
-        <FILE id="KlF2Ra" name="toolbar_button_off.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/toolbar_button_off.png"/>
-        <FILE id="bCNX5h" name="toolbar_button_on.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/toolbar_button_on.png"/>
-        <FILE id="GZKv02" name="toolbar_button_over.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/toolbar_button_over.png"/>
-        <FILE id="IcJ0bc" name="Undo_button_off.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/Undo_button_off.png"/>
-        <FILE id="GYyjQf" name="Undo_button_on.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/Undo_button_on.png"/>
-        <FILE id="AW56Ew" name="Undo_button_over.png" compile="0" resource="1"
-              file="../../../scopesync-shared/Resources/image/Undo_button_over.png"/>
       </GROUP>
       <GROUP id="{886C71CB-BE6B-0CA8-27B1-775D7CFE80AF}" name="xml">
         <FILE id="m9RLiH" name="empty.configuration" compile="0" resource="1"
@@ -469,9 +338,6 @@
     </GROUP>
     <GROUP id="{048E1C7E-507E-FF3F-096A-DB85103096AB}" name="SonicCore">
       <FILE id="v1gCYg" name="effclass.h" compile="0" resource="0" file="../../../scopesync-shared/SonicCore/effclass.h"/>
-      <FILE id="pEfNtr" name="ScopeDLL.lib" compile="0" resource="1" file="../../../scopesync-shared/SonicCore/ScopeDLL.lib"/>
-      <FILE id="nayMYS" name="ScopeDLLd.lib" compile="0" resource="1" file="../../../scopesync-shared/SonicCore/ScopeDLLd.lib"/>
-      <FILE id="URM4DK" name="sse_mathfun.h" compile="0" resource="0" file="../../../scopesync-shared/SonicCore/sse_mathfun.h"/>
     </GROUP>
     <GROUP id="{1C4C8871-FB11-809E-5CA4-192693EBA060}" name="Utils">
       <FILE id="AWOMur" name="BCMMath.h" compile="0" resource="0" file="../../../scopesync-shared/Utils/BCMMath.h"/>
