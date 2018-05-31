@@ -147,150 +147,154 @@
       <FILE id="ZF8grd" name="WidgetProperties.h" compile="0" resource="0"
             file="../../../scopesync-shared/Properties/WidgetProperties.h"/>
       <GROUP id="{4ED909C1-339C-E77C-EC04-D189C4A5194B}" name="Assets">
-        <GROUP id="{854388A5-1B4C-7E1B-31E2-AD9A073847BE}" name="gfx">
-          <FILE id="FAJH3l" name="12x36TextMVC.png" compile="0" resource="1"
-                file="../Assets/gfx/12x36TextMVC.png"/>
-          <FILE id="slmljZ" name="30x30CMS_-+24Knob.png" compile="0" resource="1"
-                file="../Assets/gfx/30x30CMS_-+24Knob.png"/>
-          <FILE id="BUKCWK" name="30x30CMS_MetalKnob.png" compile="0" resource="1"
-                file="../Assets/gfx/30x30CMS_MetalKnob.png"/>
-          <FILE id="H8ZxT1" name="36x36TextMatrix.png" compile="0" resource="1"
-                file="../Assets/gfx/36x36TextMatrix.png"/>
-          <FILE id="FqW3pg" name="40x40CMPhase.png" compile="0" resource="1"
-                file="../Assets/gfx/40x40CMPhase.png"/>
-          <FILE id="HHzPqY" name="40x40CMS_-+48+.png" compile="0" resource="1"
-                file="../Assets/gfx/40x40CMS_-+48+.png"/>
-          <FILE id="PM1fT7" name="40x40CMS_-+100+.png" compile="0" resource="1"
-                file="../Assets/gfx/40x40CMS_-+100+.png"/>
-          <FILE id="x7pNfD" name="40x40CMS_0-127x4.png" compile="0" resource="1"
-                file="../Assets/gfx/40x40CMS_0-127x4.png"/>
-          <FILE id="mUv4LG" name="40x40CMS_1-8.png" compile="0" resource="1"
-                file="../Assets/gfx/40x40CMS_1-8.png"/>
-          <FILE id="afSz9y" name="40x40CMS_5OscWaves+.png" compile="0" resource="1"
-                file="../Assets/gfx/40x40CMS_5OscWaves+.png"/>
-          <FILE id="w3MPUr" name="40x40CMS_OscWaves+.png" compile="0" resource="1"
-                file="../Assets/gfx/40x40CMS_OscWaves+.png"/>
-          <FILE id="OCws8p" name="40x40CMS_portaTypes.png" compile="0" resource="1"
-                file="../Assets/gfx/40x40CMS_portaTypes.png"/>
-          <FILE id="T7dcta" name="40x40CMS_SeqDiv.png" compile="0" resource="1"
-                file="../Assets/gfx/40x40CMS_SeqDiv.png"/>
-          <FILE id="MHydAK" name="40x40CMS_White2Darkfade+.png" compile="0" resource="1"
-                file="../Assets/gfx/40x40CMS_White2Darkfade+.png"/>
-          <FILE id="NkL4xI" name="40x40CMSwhite.png" compile="0" resource="1"
-                file="../Assets/gfx/40x40CMSwhite.png"/>
-          <FILE id="fdLZAG" name="40x40CMTempo.png" compile="0" resource="1"
-                file="../Assets/gfx/40x40CMTempo.png"/>
-          <FILE id="MZj5FK" name="40x40LfoDivider.png" compile="0" resource="1"
-                file="../Assets/gfx/40x40LfoDivider.png"/>
-          <FILE id="YQkwtF" name="50x50_CMS_-+100.png" compile="0" resource="1"
-                file="../Assets/gfx/50x50_CMS_-+100.png"/>
-          <FILE id="WEqZxU" name="50x50_CMS_-127to127.png" compile="0" resource="1"
-                file="../Assets/gfx/50x50_CMS_-127to127.png"/>
-          <FILE id="QslNrA" name="button-off.png" compile="0" resource="1" file="../Assets/gfx/button-off.png"/>
-          <FILE id="tiQ9za" name="button-on.png" compile="0" resource="1" file="../Assets/gfx/button-on.png"/>
-          <FILE id="R5Jfwy" name="CWMbackgrDark.png" compile="0" resource="1"
-                file="../Assets/gfx/CWMbackgrDark.png"/>
-          <FILE id="X8lITx" name="LfoWaveKnob.png" compile="0" resource="1" file="../Assets/gfx/LfoWaveKnob.png"/>
-          <FILE id="TJRjaq" name="line_1x63.png" compile="0" resource="1" file="../Assets/gfx/line_1x63.png"/>
-          <FILE id="FKy9B9" name="Matrix624x418newMatrixC.png" compile="0" resource="1"
-                file="../Assets/gfx/Matrix624x418newMatrixC.png"/>
-          <FILE id="v3uDYz" name="MidiActivity-Off.png" compile="0" resource="1"
-                file="../Assets/gfx/MidiActivity-Off.png"/>
-          <FILE id="zmyAiG" name="MidiActivity-On.png" compile="0" resource="1"
-                file="../Assets/gfx/MidiActivity-On.png"/>
-          <FILE id="AhjqIF" name="ModuleHeaderAd_50x14.png" compile="0" resource="1"
-                file="../Assets/gfx/ModuleHeaderAd_50x14.png"/>
-          <FILE id="lKgwr5" name="ModuleHeaderAdsr_50x14.png" compile="0" resource="1"
-                file="../Assets/gfx/ModuleHeaderAdsr_50x14.png"/>
-          <FILE id="ZaOn15" name="ModuleHeaderAT_50x14.png" compile="0" resource="1"
-                file="../Assets/gfx/ModuleHeaderAT_50x14.png"/>
-          <FILE id="OKTE0y" name="ModuleHeaderBpNz_50x14.png" compile="0" resource="1"
-                file="../Assets/gfx/ModuleHeaderBpNz_50x14.png"/>
-          <FILE id="xoUfnZ" name="ModuleHeaderConstVal_100x14.png" compile="0"
-                resource="1" file="../Assets/gfx/ModuleHeaderConstVal_100x14.png"/>
-          <FILE id="D0Z6tD" name="ModuleHeaderContrSeq_100x14.png" compile="0"
-                resource="1" file="../Assets/gfx/ModuleHeaderContrSeq_100x14.png"/>
-          <FILE id="q5WMcl" name="ModuleHeaderDel1_50x14.png" compile="0" resource="1"
-                file="../Assets/gfx/ModuleHeaderDel1_50x14.png"/>
-          <FILE id="Cm33JY" name="ModuleHeaderDel2_50x14.png" compile="0" resource="1"
-                file="../Assets/gfx/ModuleHeaderDel2_50x14.png"/>
-          <FILE id="D6IZiW" name="ModuleHeaderEVca_50x14.png" compile="0" resource="1"
-                file="../Assets/gfx/ModuleHeaderEVca_50x14.png"/>
-          <FILE id="XyP4aR" name="ModuleHeaderGateSeq100x14.png" compile="0"
-                resource="1" file="../Assets/gfx/ModuleHeaderGateSeq100x14.png"/>
-          <FILE id="ecxprt" name="ModuleHeaderHp24_50x14.png" compile="0" resource="1"
-                file="../Assets/gfx/ModuleHeaderHp24_50x14.png"/>
-          <FILE id="KXCm0E" name="ModuleHeaderLFO50x14.png" compile="0" resource="1"
-                file="../Assets/gfx/ModuleHeaderLFO50x14.png"/>
-          <FILE id="ZaAVfc" name="ModuleHeaderLp24_50x14.png" compile="0" resource="1"
-                file="../Assets/gfx/ModuleHeaderLp24_50x14.png"/>
-          <FILE id="hxKKdc" name="ModuleHeaderMix2A_50x14.png" compile="0" resource="1"
-                file="../Assets/gfx/ModuleHeaderMix2A_50x14.png"/>
-          <FILE id="ob1Qwe" name="ModuleHeaderMix2B_50x14.png" compile="0" resource="1"
-                file="../Assets/gfx/ModuleHeaderMix2B_50x14.png"/>
-          <FILE id="ACdgBG" name="ModuleHeaderMix3A_50x14.png" compile="0" resource="1"
-                file="../Assets/gfx/ModuleHeaderMix3A_50x14.png"/>
-          <FILE id="rZ5vaa" name="ModuleHeaderMix3B_50x14.png" compile="0" resource="1"
-                file="../Assets/gfx/ModuleHeaderMix3B_50x14.png"/>
-          <FILE id="gW6wpr" name="ModuleHeaderOSC1_50x14.png" compile="0" resource="1"
-                file="../Assets/gfx/ModuleHeaderOSC1_50x14.png"/>
-          <FILE id="WDUp0a" name="ModuleHeaderOSC2_50x14.png" compile="0" resource="1"
-                file="../Assets/gfx/ModuleHeaderOSC2_50x14.png"/>
-          <FILE id="cX9urb" name="ModuleHeaderOSC3_50x14.png" compile="0" resource="1"
-                file="../Assets/gfx/ModuleHeaderOSC3_50x14.png"/>
-          <FILE id="lVMiNw" name="ModuleHeaderPanOut1_100x14.png" compile="0"
-                resource="1" file="../Assets/gfx/ModuleHeaderPanOut1_100x14.png"/>
-          <FILE id="WUt9sT" name="ModuleHeaderPanOut2_100x14.png" compile="0"
-                resource="1" file="../Assets/gfx/ModuleHeaderPanOut2_100x14.png"/>
-          <FILE id="TDDGS9" name="ModuleHeaderPitchSeq_100x14.png" compile="0"
-                resource="1" file="../Assets/gfx/ModuleHeaderPitchSeq_100x14.png"/>
-          <FILE id="BNNXwG" name="ModuleHeaderPMod1_50x14.png" compile="0" resource="1"
-                file="../Assets/gfx/ModuleHeaderPMod1_50x14.png"/>
-          <FILE id="Q0pW8B" name="ModuleHeaderPMod2_50x14.png" compile="0" resource="1"
-                file="../Assets/gfx/ModuleHeaderPMod2_50x14.png"/>
-          <FILE id="iRaTTO" name="ModuleHeaderPMod3_50x14.png" compile="0" resource="1"
-                file="../Assets/gfx/ModuleHeaderPMod3_50x14.png"/>
-          <FILE id="lFWFzo" name="ModuleHeaderPorta_50x14.png" compile="0" resource="1"
-                file="../Assets/gfx/ModuleHeaderPorta_50x14.png"/>
-          <FILE id="iWzSO4" name="ModuleHeaderRdGt_50x14.png" compile="0" resource="1"
-                file="../Assets/gfx/ModuleHeaderRdGt_50x14.png"/>
-          <FILE id="JGBMWK" name="ModuleHeaderSeqSet_100x14.png" compile="0"
-                resource="1" file="../Assets/gfx/ModuleHeaderSeqSet_100x14.png"/>
-          <FILE id="Ll6ADd" name="ModuleHeaderTempo_45x14.png" compile="0" resource="1"
-                file="../Assets/gfx/ModuleHeaderTempo_45x14.png"/>
-          <FILE id="OHZ6l0" name="ModuleHeaderVelo_50x14.png" compile="0" resource="1"
-                file="../Assets/gfx/ModuleHeaderVelo_50x14.png"/>
-          <FILE id="hULW0m" name="ModuleHeaderVolM_50x14.png" compile="0" resource="1"
-                file="../Assets/gfx/ModuleHeaderVolM_50x14.png"/>
-          <FILE id="QmT25E" name="slider-background.png" compile="0" resource="1"
-                file="../Assets/gfx/slider-background.png"/>
-          <FILE id="FYbvaf" name="Slider-Thumb.png" compile="0" resource="1"
-                file="../Assets/gfx/Slider-Thumb.png"/>
-          <FILE id="K17AXm" name="Slider-ThumbBlTu.png" compile="0" resource="1"
-                file="../Assets/gfx/Slider-ThumbBlTu.png"/>
-          <FILE id="cdeYQy" name="Slider-ThumbBlWh.png" compile="0" resource="1"
-                file="../Assets/gfx/Slider-ThumbBlWh.png"/>
-          <FILE id="zkAU3L" name="TextX_Backgr.png" compile="0" resource="1"
-                file="../Assets/gfx/TextX_Backgr.png"/>
-          <FILE id="uMU8DY" name="TextX_Matrix_Destinations640x76.png" compile="0"
-                resource="1" file="../Assets/gfx/TextX_Matrix_Destinations640x76.png"/>
-          <FILE id="kTxtXj" name="TextY_Backgr.png" compile="0" resource="1"
-                file="../Assets/gfx/TextY_Backgr.png"/>
-          <FILE id="kMgUBw" name="TextY_MatrixSources_63x418.png" compile="0"
-                resource="1" file="../Assets/gfx/TextY_MatrixSources_63x418.png"/>
-          <FILE id="XvVKn3" name="ToggleSw0.png" compile="0" resource="1" file="../Assets/gfx/ToggleSw0.png"/>
-          <FILE id="jqCkyb" name="ToggleSw1.png" compile="0" resource="1" file="../Assets/gfx/ToggleSw1.png"/>
-          <FILE id="AelTQI" name="VUmeter.png" compile="0" resource="1" file="../Assets/gfx/VUmeter.png"/>
-        </GROUP>
+        <FILE id="NSpsZP" name="12x36TextMVC.png" compile="0" resource="1"
+              file="../Assets/12x36TextMVC.png"/>
+        <FILE id="gF1TwH" name="30x30CMS_-+24Knob.png" compile="0" resource="1"
+              file="../Assets/30x30CMS_-+24Knob.png"/>
+        <FILE id="yfV1Et" name="30x30CMS_MetalKnob.png" compile="0" resource="1"
+              file="../Assets/30x30CMS_MetalKnob.png"/>
+        <FILE id="viaiMl" name="36x36TextMatrix.png" compile="0" resource="1"
+              file="../Assets/36x36TextMatrix.png"/>
+        <FILE id="gcy64F" name="40x40CMPhase.png" compile="0" resource="1"
+              file="../Assets/40x40CMPhase.png"/>
+        <FILE id="PILaiR" name="40x40CMS_-+48+.png" compile="0" resource="1"
+              file="../Assets/40x40CMS_-+48+.png"/>
+        <FILE id="q4HcZc" name="40x40CMS_-+100+.png" compile="0" resource="1"
+              file="../Assets/40x40CMS_-+100+.png"/>
+        <FILE id="Etfiu1" name="40x40CMS_0-127x4.png" compile="0" resource="1"
+              file="../Assets/40x40CMS_0-127x4.png"/>
+        <FILE id="cgFbYL" name="40x40CMS_1-8.png" compile="0" resource="1"
+              file="../Assets/40x40CMS_1-8.png"/>
+        <FILE id="c2dyMT" name="40x40CMS_5OscWaves+.png" compile="0" resource="1"
+              file="../Assets/40x40CMS_5OscWaves+.png"/>
+        <FILE id="IHI0xw" name="40x40CMS_OscWaves+.png" compile="0" resource="1"
+              file="../Assets/40x40CMS_OscWaves+.png"/>
+        <FILE id="NTlVC8" name="40x40CMS_portaTypes.png" compile="0" resource="1"
+              file="../Assets/40x40CMS_portaTypes.png"/>
+        <FILE id="vEzfSy" name="40x40CMS_SeqDiv.png" compile="0" resource="1"
+              file="../Assets/40x40CMS_SeqDiv.png"/>
+        <FILE id="nz1JQY" name="40x40CMS_White2Darkfade+.png" compile="0" resource="1"
+              file="../Assets/40x40CMS_White2Darkfade+.png"/>
+        <FILE id="l9QZfI" name="40x40CMSwhite.png" compile="0" resource="1"
+              file="../Assets/40x40CMSwhite.png"/>
+        <FILE id="VDoI5j" name="40x40CMTempo.png" compile="0" resource="1"
+              file="../Assets/40x40CMTempo.png"/>
+        <FILE id="JOO7By" name="40x40LfoDivider.png" compile="0" resource="1"
+              file="../Assets/40x40LfoDivider.png"/>
+        <FILE id="r8DWTa" name="50x50_CMS_-+100.png" compile="0" resource="1"
+              file="../Assets/50x50_CMS_-+100.png"/>
+        <FILE id="sif2Qn" name="50x50_CMS_-127to127.png" compile="0" resource="1"
+              file="../Assets/50x50_CMS_-127to127.png"/>
+        <FILE id="D9ku7s" name="button-off.png" compile="0" resource="1" file="../Assets/button-off.png"/>
+        <FILE id="CJenUZ" name="button-on.png" compile="0" resource="1" file="../Assets/button-on.png"/>
         <FILE id="icyPKr" name="CMS-1.configuration" compile="0" resource="1"
               file="../Assets/CMS-1.configuration"/>
         <FILE id="ezv58P" name="CMS-1.layout" compile="0" resource="1" file="../Assets/CMS-1.layout"/>
+        <FILE id="R5V00n" name="CWMbackgrDark.png" compile="0" resource="1"
+              file="../Assets/CWMbackgrDark.png"/>
+        <FILE id="eY5cmr" name="LfoWaveKnob.png" compile="0" resource="1" file="../Assets/LfoWaveKnob.png"/>
+        <FILE id="CpjJx3" name="line_1x63.png" compile="0" resource="1" file="../Assets/line_1x63.png"/>
+        <FILE id="ok8U5m" name="Matrix624x418newMatrixC.png" compile="0" resource="1"
+              file="../Assets/Matrix624x418newMatrixC.png"/>
+        <FILE id="VoEzl1" name="MidiActivity-Off.png" compile="0" resource="1"
+              file="../Assets/MidiActivity-Off.png"/>
+        <FILE id="FuAgYU" name="MidiActivity-On.png" compile="0" resource="1"
+              file="../Assets/MidiActivity-On.png"/>
+        <FILE id="K5N3O9" name="ModuleHeaderAd_50x14.png" compile="0" resource="1"
+              file="../Assets/ModuleHeaderAd_50x14.png"/>
+        <FILE id="RdIYcX" name="ModuleHeaderAdsr_50x14.png" compile="0" resource="1"
+              file="../Assets/ModuleHeaderAdsr_50x14.png"/>
+        <FILE id="DxwIIT" name="ModuleHeaderAT_50x14.png" compile="0" resource="1"
+              file="../Assets/ModuleHeaderAT_50x14.png"/>
+        <FILE id="VKIql5" name="ModuleHeaderBpNz_50x14.png" compile="0" resource="1"
+              file="../Assets/ModuleHeaderBpNz_50x14.png"/>
+        <FILE id="LPX7mZ" name="ModuleHeaderConstVal_100x14.png" compile="0"
+              resource="1" file="../Assets/ModuleHeaderConstVal_100x14.png"/>
+        <FILE id="g1UYzY" name="ModuleHeaderContrSeq_100x14.png" compile="0"
+              resource="1" file="../Assets/ModuleHeaderContrSeq_100x14.png"/>
+        <FILE id="rsa20g" name="ModuleHeaderDel1_50x14.png" compile="0" resource="1"
+              file="../Assets/ModuleHeaderDel1_50x14.png"/>
+        <FILE id="NTtBul" name="ModuleHeaderDel2_50x14.png" compile="0" resource="1"
+              file="../Assets/ModuleHeaderDel2_50x14.png"/>
+        <FILE id="ChQoyp" name="ModuleHeaderEVca_50x14.png" compile="0" resource="1"
+              file="../Assets/ModuleHeaderEVca_50x14.png"/>
+        <FILE id="TKeIvE" name="ModuleHeaderGateSeq100x14.png" compile="0"
+              resource="1" file="../Assets/ModuleHeaderGateSeq100x14.png"/>
+        <FILE id="TWykr4" name="ModuleHeaderHp24_50x14.png" compile="0" resource="1"
+              file="../Assets/ModuleHeaderHp24_50x14.png"/>
+        <FILE id="llrak0" name="ModuleHeaderLFO50x14.png" compile="0" resource="1"
+              file="../Assets/ModuleHeaderLFO50x14.png"/>
+        <FILE id="B5A7Bb" name="ModuleHeaderLp24_50x14.png" compile="0" resource="1"
+              file="../Assets/ModuleHeaderLp24_50x14.png"/>
+        <FILE id="yJhdlh" name="ModuleHeaderMix2A_50x14.png" compile="0" resource="1"
+              file="../Assets/ModuleHeaderMix2A_50x14.png"/>
+        <FILE id="QRRx29" name="ModuleHeaderMix2B_50x14.png" compile="0" resource="1"
+              file="../Assets/ModuleHeaderMix2B_50x14.png"/>
+        <FILE id="oOCaP1" name="ModuleHeaderMix3A_50x14.png" compile="0" resource="1"
+              file="../Assets/ModuleHeaderMix3A_50x14.png"/>
+        <FILE id="pDDktU" name="ModuleHeaderMix3B_50x14.png" compile="0" resource="1"
+              file="../Assets/ModuleHeaderMix3B_50x14.png"/>
+        <FILE id="Sh4hH7" name="ModuleHeaderOSC1_50x14.png" compile="0" resource="1"
+              file="../Assets/ModuleHeaderOSC1_50x14.png"/>
+        <FILE id="tXDZv5" name="ModuleHeaderOSC2_50x14.png" compile="0" resource="1"
+              file="../Assets/ModuleHeaderOSC2_50x14.png"/>
+        <FILE id="Senfza" name="ModuleHeaderOSC3_50x14.png" compile="0" resource="1"
+              file="../Assets/ModuleHeaderOSC3_50x14.png"/>
+        <FILE id="VwrpW3" name="ModuleHeaderPanOut1_100x14.png" compile="0"
+              resource="1" file="../Assets/ModuleHeaderPanOut1_100x14.png"/>
+        <FILE id="Vg8L3Q" name="ModuleHeaderPanOut2_100x14.png" compile="0"
+              resource="1" file="../Assets/ModuleHeaderPanOut2_100x14.png"/>
+        <FILE id="GgrPH8" name="ModuleHeaderPitchSeq_100x14.png" compile="0"
+              resource="1" file="../Assets/ModuleHeaderPitchSeq_100x14.png"/>
+        <FILE id="eVOJYX" name="ModuleHeaderPMod1_50x14.png" compile="0" resource="1"
+              file="../Assets/ModuleHeaderPMod1_50x14.png"/>
+        <FILE id="DfPGku" name="ModuleHeaderPMod2_50x14.png" compile="0" resource="1"
+              file="../Assets/ModuleHeaderPMod2_50x14.png"/>
+        <FILE id="KzChQH" name="ModuleHeaderPMod3_50x14.png" compile="0" resource="1"
+              file="../Assets/ModuleHeaderPMod3_50x14.png"/>
+        <FILE id="Z5m2kY" name="ModuleHeaderPorta_50x14.png" compile="0" resource="1"
+              file="../Assets/ModuleHeaderPorta_50x14.png"/>
+        <FILE id="VfbIiX" name="ModuleHeaderRdGt_50x14.png" compile="0" resource="1"
+              file="../Assets/ModuleHeaderRdGt_50x14.png"/>
+        <FILE id="of0uQu" name="ModuleHeaderSeqSet_100x14.png" compile="0"
+              resource="1" file="../Assets/ModuleHeaderSeqSet_100x14.png"/>
+        <FILE id="o2fZDn" name="ModuleHeaderTempo_45x14.png" compile="0" resource="1"
+              file="../Assets/ModuleHeaderTempo_45x14.png"/>
+        <FILE id="WS9tCV" name="ModuleHeaderVelo_50x14.png" compile="0" resource="1"
+              file="../Assets/ModuleHeaderVelo_50x14.png"/>
+        <FILE id="Zft2to" name="ModuleHeaderVolM_50x14.png" compile="0" resource="1"
+              file="../Assets/ModuleHeaderVolM_50x14.png"/>
+        <FILE id="vDwCLj" name="slider-background.png" compile="0" resource="1"
+              file="../Assets/slider-background.png"/>
+        <FILE id="sLRM9W" name="Slider-Thumb.png" compile="0" resource="1"
+              file="../Assets/Slider-Thumb.png"/>
+        <FILE id="iiUMVa" name="Slider-ThumbBlTu.png" compile="0" resource="1"
+              file="../Assets/Slider-ThumbBlTu.png"/>
+        <FILE id="GN0ZHW" name="Slider-ThumbBlWh.png" compile="0" resource="1"
+              file="../Assets/Slider-ThumbBlWh.png"/>
+        <FILE id="pMBwsx" name="TextX_Backgr.png" compile="0" resource="1"
+              file="../Assets/TextX_Backgr.png"/>
+        <FILE id="NYsjqq" name="TextX_Matrix_Destinations640x76.png" compile="0"
+              resource="1" file="../Assets/TextX_Matrix_Destinations640x76.png"/>
+        <FILE id="T449IB" name="TextY_Backgr.png" compile="0" resource="1"
+              file="../Assets/TextY_Backgr.png"/>
+        <FILE id="HrI4eG" name="TextY_MatrixSources_63x418.png" compile="0"
+              resource="1" file="../Assets/TextY_MatrixSources_63x418.png"/>
+        <FILE id="Lsdxwg" name="ToggleSw0.png" compile="0" resource="1" file="../Assets/ToggleSw0.png"/>
+        <FILE id="CdwWAf" name="ToggleSw1.png" compile="0" resource="1" file="../Assets/ToggleSw1.png"/>
+        <FILE id="PhGdJl" name="VUmeter.png" compile="0" resource="1" file="../Assets/VUmeter.png"/>
       </GROUP>
     </GROUP>
     <GROUP id="{68C90446-4556-32A6-1CD4-B42B54FF9B74}" name="Resources">
       <GROUP id="{E2B30576-0D7F-762D-CC62-FF07480120AE}" name="font"/>
       <GROUP id="{F45AA97D-12AE-D080-9C4E-E63580304EE9}" name="image">
         <FILE id="mDMyWw" name="divider.png" compile="0" resource="1" file="../../../scopesync-shared/Resources/image/divider.png"/>
+        <FILE id="TEnSLQ" name="Presets_button_off.png" compile="0" resource="1"
+              file="../../../scopesync-shared/Resources/image/Presets_button_off.png"/>
+        <FILE id="wJUbci" name="Presets_button_on.png" compile="0" resource="1"
+              file="../../../scopesync-shared/Resources/image/Presets_button_on.png"/>
+        <FILE id="Mtyh9T" name="Presets_button_over.png" compile="0" resource="1"
+              file="../../../scopesync-shared/Resources/image/Presets_button_over.png"/>
         <FILE id="Kaqba0" name="ScopeSync_Logo.png" compile="0" resource="1"
               file="../../../scopesync-shared/Resources/image/ScopeSync_Logo.png"/>
         <FILE id="gicNwg" name="ScopeSync_Logo_off.png" compile="0" resource="1"
@@ -372,7 +376,7 @@
     </GROUP>
   </MAINGROUP>
   <EXPORTFORMATS>
-    <VS2017 targetFolder="Builds/VisualStudio2017" extraDefs="_XKEYCHECK_H&#10;JUCE_NO_COMPILER_THREAD_LOCAL=1&#10;_CRT_SECURE_NO_DEPRECATE&#10;SCOPE_MODULE_NAME=&quot;CMS-1\ 1.0.1&quot;"
+    <VS2017 targetFolder="Builds/VisualStudio2017" extraDefs="_XKEYCHECK_H&#10;JUCE_NO_COMPILER_THREAD_LOCAL=1&#10;_CRT_SECURE_NO_DEPRECATE&#10;SCOPE_MODULE_NAME=&quot;CMS-1\ 1.0.1&quot;&#10;LOADER_CONFIGURATION=&quot;CMS-1.configuration&quot;&#10;LOADER_LAYOUT=&quot;CMS-1.layout&quot;"
             extraLinkerFlags="/SAFESEH:NO" externalLibraries="${SCOPELIB};legacy_stdio_definitions.lib">
       <CONFIGURATIONS>
         <CONFIGURATION isDebug="1" name="Debug" targetName="CMS-1-Debug_1_0_1" defines="__DLL_EFFECT__&#10;SCOPELIB=ScopeDLLd.lib"

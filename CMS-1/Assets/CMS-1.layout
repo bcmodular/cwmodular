@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <tns:ScopeSyncLayout xmlns:tns="http://www.scopesync.co.uk/ScopeSyncLayout" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.scopesync.co.uk/ScopeSyncLayout https://raw.githubusercontent.com/bcmodular/scopesync/master/XSD/ScopeSyncLayout.xsd ">
   <layout name="CMS-1" libraryset="CWM" author="Roy Thinnes" panelheight="684" panelwidth="1280" blurb="Layout for CMS-1" thumbnail="thumbnail_CMS3.png" excludefromchooser="false">
     <lookandfeels>
