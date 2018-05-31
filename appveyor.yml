@@ -40,10 +40,9 @@ install:
   - cmd: git clone --depth 1 https://github.com/bcmodular/scopesync-shared.git
   - ps: (Get-Content -Path "c:/JUCE/extras/Projucer/JuceLibraryCode/AppConfig.h") | ForEach-Object {$_ -Replace "#define JUCER_ENABLE_GPL_MODE 0", "#define JUCER_ENABLE_GPL_MODE 1"} | Set-Content -Path "c:/JUCE/extras/Projucer/JuceLibraryCode/AppConfig.h"
   - cmd: msbuild c:/JUCE/extras/Projucer/Builds/VisualStudio2017/Projucer.sln /property:Platform=x64
-  - cmd: c:\JUCE\extras\Projucer\Builds\VisualStudio2017\x64\Debug\App\Projucer.exe --resave C:\scopesync\Builds\ScopeSyncFX\ScopeSyncFX.jucer
-  - cmd: c:\JUCE\extras\Projucer\Builds\VisualStudio2017\x64\Debug\App\Projucer.exe --resave C:\scopesync\Builds\ScopeSyncInstPlugin\ScopeSyncInstPlugin.jucer
-  - cmd: c:\JUCE\extras\Projucer\Builds\VisualStudio2017\x64\Debug\App\Projucer.exe --resave C:\scopesync\Builds\ScopeSyncEffectPlugin\ScopeSyncEffectPlugin.jucer
-  - cmd: cd c:\scopesync
+  - cmd: c:\JUCE\extras\Projucer\Builds\VisualStudio2017\x64\Debug\App\Projucer.exe --resave C:\cwmodular\CMS-1\PluginBuild\CMS-1_Plugin.jucer
+  - cmd: c:\JUCE\extras\Projucer\Builds\VisualStudio2017\x64\Debug\App\Projucer.exe --resave C:\cwmodular\CMS-1\ScopeModuleBuild\CMS-1_ScopeModule.jucer
+  - cmd: cd c:\cwmodular
   - cmd: mkdir MS
   - cmd: cd MS
   - ps: Start-FileDownload 'https://aka.ms/vs/15/release/vc_redist.x86.exe'
