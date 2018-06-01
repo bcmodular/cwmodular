@@ -11,8 +11,9 @@
               pluginAAXCategory="0" jucerVersion="5.3.2" companyName="cwmodular"
               companyWebsite="http://cwmodular.org/" companyEmail="support@scopesync.co.uk"
               pluginIsMidiEffectPlugin="0" reportAppUsage="0" displaySplashScreen="0"
-              buildVST3="0" buildStandalone="1" pluginFormats="buildVST,buildAU,buildStandalone"
-              pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn,pluginProducesMidiOut,pluginEditorRequiresKeys">
+              buildVST3="1" buildStandalone="1" pluginFormats="buildVST,buildVST3,buildAU,buildStandalone"
+              pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn,pluginProducesMidiOut,pluginEditorRequiresKeys"
+              buildAUv3="0" enableIAA="0">
   <MAINGROUP id="zkEMvA" name="CMS-1">
     <GROUP id="{697F9A75-3D66-E01A-0E48-E2526D10C18B}" name="Comms">
       <FILE id="cm9H20" name="OSCServer.cpp" compile="1" resource="0" file="../../../scopesync-shared/Comms/OSCServer.cpp"/>
@@ -375,9 +376,9 @@
         <CONFIGURATION isDebug="1" name="Debug_x64" targetName="CMS-1_Debug-x64_1_0_1"
                        useRuntimeLibDLL="0"/>
         <CONFIGURATION isDebug="0" name="Release" targetName="CMS-1_1_0_1" useRuntimeLibDLL="0"
-                       winArchitecture="Win32" optimisation="4" postbuildCommand="if &quot;$(ProjectName)&quot;==&quot;$(SolutionName)_VST&quot; xcopy /Y &quot;$(TargetDir)$(TargetName).dll&quot; &quot;$(TargetDir)..\..\..\..\..\..\..\Plugins\Windows\VST2\32bit\&quot;&#10;if &quot;$(ProjectName)&quot;==&quot;$(SolutionName)_StandalonePlugin&quot; xcopy /Y &quot;$(TargetDir)$(TargetName).exe&quot; &quot;$(TargetDir)..\..\..\..\..\..\..\Plugins\Windows\Standalone\32bit\&quot;"/>
+                       winArchitecture="Win32" optimisation="4" postbuildCommand="if &quot;$(ProjectName)&quot;==&quot;$(SolutionName)_VST&quot; xcopy /Y &quot;$(TargetDir)$(TargetName).dll&quot; &quot;$(TargetDir)..\..\..\..\..\..\..\Plugins\Windows\VST2\32bit\&quot;&#10;if &quot;$(ProjectName)&quot;==&quot;$(SolutionName)_VST3&quot; xcopy /Y &quot;$(TargetDir)$(TargetName).vst3&quot; &quot;$(TargetDir)..\..\..\..\..\..\..\Plugins\Windows\VST3\32bit\&quot;&#10;if &quot;$(ProjectName)&quot;==&quot;$(SolutionName)_StandalonePlugin&quot; xcopy /Y &quot;$(TargetDir)$(TargetName).exe&quot; &quot;$(TargetDir)..\..\..\..\..\..\..\Plugins\Windows\Standalone\32bit\&quot;"/>
         <CONFIGURATION isDebug="0" name="Release_x64" targetName="CMS-1_x64_1_0_1" optimisation="4"
-                       useRuntimeLibDLL="0" postbuildCommand="if &quot;$(ProjectName)&quot;==&quot;$(SolutionName)_VST&quot; xcopy /Y &quot;$(TargetDir)$(TargetName).dll&quot; &quot;$(TargetDir)..\..\..\..\..\..\..\Plugins\Windows\VST2\64bit\&quot;&#10;if &quot;$(ProjectName)&quot;==&quot;$(SolutionName)_StandalonePlugin&quot; xcopy /Y &quot;$(TargetDir)$(TargetName).exe&quot; &quot;$(TargetDir)..\..\..\..\..\..\..\Plugins\Windows\Standalone\64bit\&quot;"/>
+                       useRuntimeLibDLL="0" postbuildCommand="if &quot;$(ProjectName)&quot;==&quot;$(SolutionName)_VST&quot; xcopy /Y &quot;$(TargetDir)$(TargetName).dll&quot; &quot;$(TargetDir)..\..\..\..\..\..\..\Plugins\Windows\VST2\64bit\&quot;&#10;if &quot;$(ProjectName)&quot;==&quot;$(SolutionName)_VST3&quot; xcopy /Y &quot;$(TargetDir)$(TargetName).vst3&quot; &quot;$(TargetDir)..\..\..\..\..\..\..\Plugins\Windows\VST3\64bit\&quot;&#10;if &quot;$(ProjectName)&quot;==&quot;$(SolutionName)_StandalonePlugin&quot; xcopy /Y &quot;$(TargetDir)$(TargetName).exe&quot; &quot;$(TargetDir)..\..\..\..\..\..\..\Plugins\Windows\Standalone\64bit\&quot;"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
         <MODULEPATH id="juce_osc" path="../../../JUCE/modules"/>

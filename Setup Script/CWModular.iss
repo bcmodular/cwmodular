@@ -41,13 +41,13 @@ Name: "custom"; Description: "Custom installation"; Flags: iscustom
 ; MyProg.exe otherwise.
 ; Place all x64 files here
 Source: "..\Plugins\Windows\VST2\64bit\*"; DestDir: "{code:GetVST2Dir}\{#AppName}"; Flags: ignoreversion; Check: Is64BitInstallMode; Components:VSTPlugin\64VST2
-;Source: "..\VST Plugin\VST3\64bit\*"; DestDir: "{cf}\VST3\{#AppName}"; Flags: ignoreversion; Check: Is64BitInstallMode; Components:VSTPlugin\64VST3
+Source: "..\Plugins\Windows\VST3\64bit\*"; DestDir: "{cf}\VST3\{#AppName}"; Flags: ignoreversion; Check: Is64BitInstallMode; Components:VSTPlugin\64VST3
 ; Place all x86 files here, first one should be marked 'solidbreak'
 ; Place all common files here, first one should be marked 'solidbreak'
 Source: "..\Scope DLL\*"; DestDir: "{code:GetScopeDir}\App\Dll"; Flags: ignoreversion solidbreak; Components: ScopeDLL
 ;Source: "..\BC Modular Modules\*"; DestDir: "{code:GetModularDir}"; Flags: ignoreversion; Components: BCMod
 Source: "..\Plugins\Windows\VST2\32bit\*"; DestDir: "{code:GetVST2Dir}\{#AppName}"; Flags: ignoreversion; Components:VSTPlugin\32VST2
-;Source: "..\VST Plugin\VST3\32bit\*"; DestDir: "{cf32}\{#AppName}"; Flags: ignoreversion; Components:VSTPlugin\32VST3
+Source: "..\Plugins\Windows\VST3\32bit\*"; DestDir: "{cf32}\{#AppName}"; Flags: ignoreversion; Components:VSTPlugin\32VST3
 ;Source: "..\Configurations\*"; DestDir: "{app}\Configurations"; Flags: ignoreversion recursesubdirs; Components: Configurations
 ;Source: "..\Layouts\*"; DestDir: "{app}\Layouts"; Flags: ignoreversion recursesubdirs; Components: Layouts
 ;Source: "..\Presets\*"; DestDir: "{app}\Presets"; Flags: ignoreversion recursesubdirs; Components: Presets
@@ -68,8 +68,8 @@ Name: "ScopeDLL"; Description: "Scope Module"; Types: full typical compact
 Name: "VSTPlugin"; Description: "VST Plugins"; Types: full typical compact
 Name: "VSTPlugin\32VST2"; Description: "32-bit VST2 Plugin"; Types: full typical compact
 Name: "VSTPlugin\64VST2"; Description: "64-bit VST2 Plugin"; Types: full typical compact; Check: Is64BitInstallMode
-;Name: "VSTPlugin\32VST3"; Description: "32-bit VST3 Plugin (Experimental)"
-;Name: "VSTPlugin\64VST3"; Description: "64-bit VST3 Plugin (Experimental)"; Check: Is64BitInstallMode
+Name: "VSTPlugin\32VST3"; Description: "32-bit VST3 Plugin (Experimental)"
+Name: "VSTPlugin\64VST3"; Description: "64-bit VST3 Plugin (Experimental)"; Check: Is64BitInstallMode
 
 [Run]
 Filename: "{tmp}\VC_redist.x64.exe"; Parameters: "/install /passive /norestart"; Check: Is64BitInstallMode; StatusMsg: Installing 2017 RunTime...
@@ -113,7 +113,7 @@ var
   VST2Dir: String;
   ScopeDir: String;
 //  ModularDir: String;
-//  VST3Text: String;
+  VST3Text: String;
 begin
   if not(RegQueryStringValue(HKEY_CURRENT_USER, '{#RegSubKey}', 'VST2Dir', VST2Dir)) then
   begin
@@ -154,14 +154,13 @@ begin
 //  ScopeDirPage2ID := ScopeDirPage2.ID;
 //  ScopeDirPage2.Values[0] := ModularDir;
   
-  // VST3Text := 'N.B. If selected, VST3 files will be installed in the standard locations, e.g. ' + ExpandConstant('{cf}\VST3\');
+VST3Text := 'N.B. If selected, VST3 files will be installed in the standard locations, e.g. ' + ExpandConstant('{cf}\VST3\');
   
   AdditionalDirPage1 := CreateInputDirPage(
     ScopeDirPage1ID,
     'Select VST2 Directory',
     'Where should VST2 files be installed?',
-    //VST3Text,
-    '',
+    VST3Text,
     False,
     '{#AppName}'
   );
