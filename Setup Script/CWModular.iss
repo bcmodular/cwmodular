@@ -98,16 +98,6 @@ begin
   Result := ScopeDir;
 end;
 
-function GetModularDir(Param: String): String;
-var
-  ModularDir: String;
-begin
-  ModularDir := ScopeDirPage2.Values[0];
-  RegWriteStringValue(HKEY_CURRENT_USER, '{#RegSubKey}', 'ModularDir', ModularDir);
-  { Return the selected ModularDir }
-  Result := ModularDir;
-end;
-
 function GetVST2Dir(Param: String): String;
 var
   VST2Dir: String;
