@@ -512,7 +512,8 @@
                pluginAutomatable="1" editableInScopeUI="1" editableInPluginUI="1"/>
     <parameter name="PitchSeq7" scopeRangeMin="0" scopeRangeMax="2147483647" scopeDBRef="0" valueType="0" uiResetValue="0.00000000000000000000"
                uiSkewFactor="1.00000000000000000000" skewUIOnly="0" uiRangeMin="-24" uiRangeMax="24" uiRangeInterval="1" uiSuffix="" scopeRangeMinFlt="0"
-               scopeRangeMaxFlt="1" uiSkewMidpoint="" scopeParamGroup="9" scopeParamId="15" shortDescription="7" fullDescription="PitchSeq7"/>
+               scopeRangeMaxFlt="1" uiSkewMidpoint="" scopeParamGroup="9" scopeParamId="15" shortDescription="7" fullDescription="PitchSeq7"
+               pluginAutomatable="1" editableInScopeUI="1" editableInPluginUI="1"/>
     <parameter name="PitchSeq8" scopeRangeMin="0" scopeRangeMax="2147483647" scopeDBRef="0" valueType="0" uiResetValue="0.00000000000000000000"
                uiSkewFactor="1.00000000000000000000" skewUIOnly="0" uiRangeMin="-24" uiRangeMax="24" uiRangeInterval="1" uiSuffix="" scopeRangeMinFlt="0"
                scopeRangeMaxFlt="1" uiSkewMidpoint="" scopeParamGroup="9" scopeParamId="16" shortDescription="8" fullDescription="PitchSeq8"
@@ -520,11 +521,11 @@
     <parameter name="VU1" scopeRangeMin="0" scopeRangeMax="2147483647" scopeDBRef="0" valueType="0" uiResetValue="0.00000000000000000000"
                uiSkewFactor="1.00000000000000000000" skewUIOnly="0" uiRangeMin="0" uiRangeMax="100" uiRangeInterval="1" uiSuffix="" scopeRangeMinFlt="0"
                scopeRangeMaxFlt="1" uiSkewMidpoint="" scopeParamGroup="8" scopeParamId="7" shortDescription="VU1" fullDescription="VU1"
-               pluginAutomatable="0" editableInScopeUI="1" editableInPluginUI="1"/>
+               pluginAutomatable="0" editableInScopeUI="0" editableInPluginUI="0"/>
     <parameter name="VU2" scopeRangeMin="0" scopeRangeMax="2147483647" scopeDBRef="0" valueType="0" uiResetValue="0.00000000000000000000"
                uiSkewFactor="1.00000000000000000000" skewUIOnly="0" uiRangeMin="0" uiRangeMax="100" uiRangeInterval="1" uiSuffix="" scopeRangeMinFlt="0"
                scopeRangeMaxFlt="1" uiSkewMidpoint="" scopeParamGroup="8" scopeParamId="8" shortDescription="VU2" fullDescription="VU2"
-               pluginAutomatable="0" editableInScopeUI="1" editableInPluginUI="1"/>
+               pluginAutomatable="0" editableInScopeUI="0" editableInPluginUI="0"/>
     <parameter name="MatrixOSC1FDest" shortDescription="OSC1F" fullDescription="Matrix OSC1F Destination" scopeParamGroup="10" scopeParamId="1"
                scopeRangeMin="0" scopeRangeMax="2147483647" scopeDBRef="0.00000000000000000000" valueType="1" uiResetValue="0.00000000000000000000"
                uiSkewFactor="1.00000000000000000000" skewUIOnly="0" uiRangeMin="0.00000000000000000000" uiRangeMax="33.00000000000000000000"
