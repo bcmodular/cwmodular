@@ -299,76 +299,74 @@
       <backgroundimageplacement>ytop</backgroundimageplacement>
       <bounds height="746" width="1280" />
       <!--ScopeSync Header-->
-      <component>
-        <component id="header">
-          <bounds relativerectangle="0, 1, parent.width, top + 40" />
-          <textbutton lfid="system:scopesynclogo_button" name="showaboutbox" id="showaboutbox" text="" tooltip="Show About Box">
-            <bounds relativerectangle="13, 11, left + 151, top + 21" />
-          </textbutton>
-          <label lfid="configname" name="configurationname" text="Current Configuration">
-            <bounds relativerectangle="showaboutbox.right + 8, 9, left + 131, top + 17" />
-            <font height="24" />
-            <justification verticallycentred="true" horizontallycentred="true" />
-          </label>
-          <textbutton lfid="system:new_config_button" name="newconfiguration" tooltip="New Configuration">
-            <bounds x="311" y="9" width="20" height="21" />
-          </textbutton>
-          <textbutton lfid="system:load_config_button" name="chooseconfiguration" tooltip="Load Configuration">
-            <bounds x="331" y="9" width="21" height="21" />
-          </textbutton>
-          <textbutton lfid="system:reload_button" name="reloadconfiguration" tooltip="Reload Current Configuration">
-            <bounds x="356" y="9" width="21" height="21" />
-          </textbutton>
-          <textbutton lfid="system:showconfigurationmanager_button" name="showconfigurationmanager" id="showconfigurationmanager" text="" tooltip="Open Configuration Manager panel">
-            <bounds x="379" y="9" width="21" height="21" />
-          </textbutton>
-          <textbutton lfid="system:settings_button" name="showusersettings" id="showusersettings" text="" tooltip="Open User Settings panel">
-            <bounds relativerectangle="right - 28, 9, parent.width - 4, top + 21" />
-          </textbutton>
-          <textbutton lfid="system:snapshot_button" name="snapshot" id="snapshot" text="" tooltip="Send a snapshot of all current parameter values. Ctrl-click to send snapshot for all ScopeSync instances">
-            <bounds relativerectangle="right - 32, showusersettings.top, showusersettings.left - 3, top + 21" />
-          </textbutton>
-          <textbutton lfid="system:presets_button" name="Show Preset Window" id="showpreset" tooltip="Open Preset Browser" displaycontext="scope">
-            <bounds relativerectangle="right - 19, snapshot.top, snapshot.left - 3, top + 21" />
-          </textbutton>
-          <label name="deviceinstance" id="deviceinstancelabel" text="Device Instance" lfid="headercontrols" displaycontext="scope">
-            <bounds relativerectangle="right - 160, snapshot.top, showpreset.left - 5, snapshot.bottom" />
-            <font bold="true" height="14" />
-            <justification left="true" />
-          </label>
-          <slider name="deviceinstance" id="deviceinstanceslider" style="linearbar" nostyleoverride="true" lfid="headercontrols" displaycontext="scope">
-            <bounds relativerectangle="right - 46, snapshot.top, showpreset.left - 5, snapshot.bottom" />
-            <range min="0" max="1000" int="1"/>
-            <textbox position="above" readonly="false">
-              <font height="14" bold="true"/>
-            </textbox>
-          </slider>
-          <label name="deviceinstance" id="deviceinstancelabel" text="Device Instance" lfid="headercontrols" displaycontext="host">
-            <bounds relativerectangle="right - 160, snapshot.top, snapshot.left - 5, snapshot.bottom" />
-            <font bold="true" height="14" />
-            <justification left="true" />
-          </label>
-          <slider name="deviceinstance" id="deviceinstanceslider" style="linearbar" nostyleoverride="true" lfid="headercontrols" displaycontext="host">
-            <bounds relativerectangle="right - 46, snapshot.top, snapshot.left - 5, snapshot.bottom" />
-            <range min="0" max="1000" int="1"/>
-            <textbox position="above" readonly="false">
-              <font height="14" bold="true"/>
-            </textbox>
-          </slider>
-          <label name="MIDI Channel" id="midichannellabel" text="MIDI Channel" lfid="headercontrols" displaycontext="scope">
-            <bounds relativerectangle="right - 180, snapshot.top, deviceinstancelabel.left - 5, snapshot.bottom" />
-            <font bold="true" height="14" />
-            <justification left="true" />
-          </label>
-          <combobox name="MIDI Channel" id="midichannelcombo" nostyleoverride="true" lfid="midichannelcombo" editabletext="false" nochoicestext="-- MIDI Ch --" nothingselectedtext="" tooltip="Choose MIDI Channel for this CMS1000 instance" displaycontext="scope">
-            <bounds relativerectangle="right - 66, snapshot.top, deviceinstancelabel.left - 25, snapshot.bottom" />
-            <justification right="true" />
-            <font bold="true" />
-          </combobox>
-          <textbutton name="MIDI Activity" id="midiactbutton" lfid="midilight" displaycontext="scope" tooltip="MIDI Activity">
-            <bounds relativerectangle="right - 10, midichannellabel.top + (midichannellabel.height / 2) - 5, deviceinstancelabel.left - 10, top + 10" />
-          </textbutton>
-        </component>
+      <component id="header">
+        <bounds relativerectangle="0, 1, parent.width, top + 40" />
+        <textbutton lfid="system:scopesynclogo_button" name="showaboutbox" id="showaboutbox" text="" tooltip="Show About Box">
+          <bounds relativerectangle="13, 11, left + 151, top + 21" />
+        </textbutton>
+        <label lfid="configname" name="configurationname" text="Current Configuration">
+          <bounds relativerectangle="showaboutbox.right + 8, 9, left + 131, top + 17" />
+          <font height="24" />
+          <justification verticallycentred="true" horizontallycentred="true" />
+        </label>
+        <textbutton lfid="system:new_config_button" name="newconfiguration" tooltip="New Configuration">
+          <bounds x="311" y="9" width="20" height="21" />
+        </textbutton>
+        <textbutton lfid="system:load_config_button" name="chooseconfiguration" tooltip="Load Configuration">
+          <bounds x="331" y="9" width="21" height="21" />
+        </textbutton>
+        <textbutton lfid="system:reload_button" name="reloadconfiguration" tooltip="Reload Current Configuration">
+          <bounds x="356" y="9" width="21" height="21" />
+        </textbutton>
+        <textbutton lfid="system:showconfigurationmanager_button" name="showconfigurationmanager" id="showconfigurationmanager" text="" tooltip="Open Configuration Manager panel">
+          <bounds x="379" y="9" width="21" height="21" />
+        </textbutton>
+        <textbutton lfid="system:settings_button" name="showusersettings" id="showusersettings" text="" tooltip="Open User Settings panel">
+          <bounds relativerectangle="right - 28, 9, parent.width - 4, top + 21" />
+        </textbutton>
+        <textbutton lfid="system:snapshot_button" name="snapshot" id="snapshot" text="" tooltip="Send a snapshot of all current parameter values. Ctrl-click to send snapshot for all ScopeSync instances">
+          <bounds relativerectangle="right - 32, showusersettings.top, showusersettings.left - 3, top + 21" />
+        </textbutton>
+        <textbutton lfid="system:presets_button" name="Show Preset Window" id="showpreset" tooltip="Open Preset Browser" displaycontext="scope">
+          <bounds relativerectangle="right - 19, snapshot.top, snapshot.left - 3, top + 21" />
+        </textbutton>
+        <label name="deviceinstance" id="deviceinstancelabel" text="Device Instance" lfid="headercontrols" displaycontext="scope">
+          <bounds relativerectangle="right - 160, snapshot.top, showpreset.left - 5, snapshot.bottom" />
+          <font bold="true" height="14" />
+          <justification left="true" />
+        </label>
+        <slider name="deviceinstance" id="deviceinstanceslider" style="linearbar" nostyleoverride="true" lfid="headercontrols" displaycontext="scope">
+          <bounds relativerectangle="right - 46, snapshot.top, showpreset.left - 5, snapshot.bottom" />
+          <range min="0" max="1000" int="1"/>
+          <textbox position="above" readonly="false">
+            <font height="14" bold="true"/>
+          </textbox>
+        </slider>
+        <label name="deviceinstance" id="deviceinstancelabel" text="Device Instance" lfid="headercontrols" displaycontext="host">
+          <bounds relativerectangle="right - 160, snapshot.top, snapshot.left - 5, snapshot.bottom" />
+          <font bold="true" height="14" />
+          <justification left="true" />
+        </label>
+        <slider name="deviceinstance" id="deviceinstanceslider" style="linearbar" nostyleoverride="true" lfid="headercontrols" displaycontext="host">
+          <bounds relativerectangle="right - 46, snapshot.top, snapshot.left - 5, snapshot.bottom" />
+          <range min="0" max="1000" int="1"/>
+          <textbox position="above" readonly="false">
+            <font height="14" bold="true"/>
+          </textbox>
+        </slider>
+        <label name="MIDI Channel" id="midichannellabel" text="MIDI Channel" lfid="headercontrols" displaycontext="scope">
+          <bounds relativerectangle="right - 180, snapshot.top, deviceinstancelabel.left - 5, snapshot.bottom" />
+          <font bold="true" height="14" />
+          <justification left="true" />
+        </label>
+        <combobox name="MIDI Channel" id="midichannelcombo" nostyleoverride="true" lfid="midichannelcombo" editabletext="false" nochoicestext="-- MIDI Ch --" nothingselectedtext="" tooltip="Choose MIDI Channel for this CMS1000 instance" displaycontext="scope">
+          <bounds relativerectangle="right - 66, snapshot.top, deviceinstancelabel.left - 25, snapshot.bottom" />
+          <justification right="true" />
+          <font bold="true" />
+        </combobox>
+        <textbutton name="MIDI Activity" id="midiactbutton" lfid="midilight" displaycontext="scope" tooltip="MIDI Activity">
+          <bounds relativerectangle="right - 10, midichannellabel.top + (midichannellabel.height / 2) - 5, deviceinstancelabel.left - 10, top + 10" />
+        </textbutton>
       </component>
       <!--First row of controls-->
       <component backgroundcolour="00ff0000" name="First Row" id="firstrow">
