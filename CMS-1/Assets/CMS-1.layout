@@ -289,6 +289,13 @@
           <justification left="true" />
         </textbox>
       </slider>
+      <slider style="linearbar" velocitybasedmode="true" lfid="maintheme" wtid="knobbar">
+        <bounds x="0" y="0" />
+        <textbox readonly="false">
+          <font bold="true" height="10" />
+          <justification horizontallycentred="true" />
+        </textbox>
+      </slider>
       <slider style="linearvertical" encodersnap="true" inverted="true" lfid="matrixfader" wtid="matrixfader">
         <textbox position="none" />
         <bounds x="0" y="0" />
@@ -337,9 +344,9 @@
         </label>
         <slider name="deviceinstance" id="deviceinstanceslider" style="linearbar" nostyleoverride="true" lfid="headercontrols" displaycontext="scope">
           <bounds relativerectangle="right - 46, snapshot.top, showpreset.left - 5, snapshot.bottom" />
-          <range min="0" max="1000" int="1"/>
+          <range min="0" max="1000" int="1" />
           <textbox position="above" readonly="false">
-            <font height="14" bold="true"/>
+            <font height="14" bold="true" />
           </textbox>
         </slider>
         <label name="deviceinstance" id="deviceinstancelabel" text="Device Instance" lfid="headercontrols" displaycontext="host">
@@ -349,9 +356,9 @@
         </label>
         <slider name="deviceinstance" id="deviceinstanceslider" style="linearbar" nostyleoverride="true" lfid="headercontrols" displaycontext="host">
           <bounds relativerectangle="right - 46, snapshot.top, snapshot.left - 5, snapshot.bottom" />
-          <range min="0" max="1000" int="1"/>
+          <range min="0" max="1000" int="1" />
           <textbox position="above" readonly="false">
-            <font height="14" bold="true"/>
+            <font height="14" bold="true" />
           </textbox>
         </slider>
         <label name="MIDI Channel" id="midichannellabel" text="MIDI Channel" lfid="headercontrols" displaycontext="scope">
@@ -360,7 +367,7 @@
           <justification left="true" />
         </label>
         <combobox name="MIDI Channel" id="midichannelcombo" nostyleoverride="true" lfid="midichannelcombo" editabletext="false" nochoicestext="-- MIDI Ch --" nothingselectedtext="" tooltip="Choose MIDI Channel for this CMS1000 instance" displaycontext="scope">
-          <bounds relativerectangle="right - 66, snapshot.top, deviceinstancelabel.left - 25, snapshot.bottom" />
+          <bounds x="942" y="7" width="66" height="25" />
           <justification right="true" />
           <font bold="true" />
         </combobox>
@@ -531,11 +538,12 @@
             <bounds fillparent="true" />
           </rectangle>
           <slider name="Bpf Freq" id="BpfFreqSlider" popupenabled="false" lfid="white2darkknob">
-            <bounds relativerectangle="4, 14, parent.width - 4, top + 52" />
-            <textbox position="below" height="14" width="100">
-              <font bold="false" height="12" />
-              <justification horizontallycentred="true" />
-            </textbox>
+            <bounds relativerectangle="5, 10, parent.width - 4, top + 45" />
+            <textbox position="none" />
+          </slider>
+          <slider name="BpfFreqBar" id="BpfFreqBar" wtid="knobbar" >
+            <bounds relativerectangle="3, BpfFreqSlider.bottom - 2, parent.width - 3, top + 15" />
+            <mappingparent componentname="Bpf Freq" componenttype="slider" />
           </slider>
           <component name="BpNzHeaderText" id="BpNzHeaderText" backgroundimage="ModuleHeaderBpNz_50x14.png" debugwidgetposition="false">
             <bounds relativerectangle="(parent.width / 2) - 25, 0, left + 50, top + 14" />
@@ -909,13 +917,13 @@
             <bounds fillparent="true" />
           </rectangle>
           <slider name="Del1DT1" id="Del1DT1Slider" lfid="white2darkknob" popupenabled="true" encodersnap="true">
-            <bounds relativerectangle="parent.left + 5, 10, left + 40, top + 45" />
+            <bounds relativerectangle="5, 10, left + 40, top + 45" />
             <textbox position="none" />
           </slider>
-          <label name="Del1DT1" id="Del1DT1Label" parametertextdisplay="shortdescription" lfid="maintheme" wtid="parameterlabel">
-            <bounds relativerectangle="Del1DT1Slider.left, Del1DT1Slider.bottom + 2, Del1DT1Slider.right, top + 8  " />
+          <slider name="Del1DT1Bar" id="Del1DT1Bar" wtid="knobbar" >
+            <bounds relativerectangle="3, Del1DT1Slider.bottom - 2, left + 44, top + 15" />
             <mappingparent componentname="Del1DT1" componenttype="slider" />
-          </label>
+          </slider>
           <slider name="Del1DT2" id="Del1DT2Slider" lfid="white2darkknob" popupenabled="true" encodersnap="true">
             <bounds relativerectangle="Del1DT1Slider.right + 8, Del1DT1Slider.top, left + Del1DT1Slider.width, top +  Del1DT1Slider.height " />
             <textbox position="none" />
