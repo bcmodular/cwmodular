@@ -157,8 +157,9 @@
                skewUIOnly="0" uiRangeMin="0" uiRangeMax="127" uiRangeInterval="1" uiSuffix="" scopeRangeMinFlt="0" scopeRangeMaxFlt="1"
                uiSkewMidpoint="" scopeParamGroup="2" scopeParamId="10" shortDescription="VolMod" fullDescription="LFO VolMod"/>
     <parameter name="Tempo" scopeRangeMin="0" scopeRangeMax="2147483647" scopeDBRef="0" valueType="0" uiResetValue="120" uiSkewFactor="1.00000000000000000000"
-               skewUIOnly="0" uiRangeMin="60" uiRangeMax="180" uiRangeInterval="1" uiSuffix="BPM" scopeRangeMinFlt="0" scopeRangeMaxFlt="1"
-               uiSkewMidpoint="" scopeParamGroup="2" scopeParamId="11" shortDescription="BPM" fullDescription="Tempo"/>
+               skewUIOnly="0" uiRangeMin="60" uiRangeMax="180" uiRangeInterval="1" uiSuffix="" scopeRangeMinFlt="0" scopeRangeMaxFlt="1"
+               uiSkewMidpoint="" scopeParamGroup="2" scopeParamId="11" shortDescription="BPM" fullDescription="Tempo" pluginAutomatable="1"
+               editableInScopeUI="1" editableInPluginUI="1"/>
     <parameter name="AdsrGateSrc" shortDescription="AdsrGateSrc" fullDescription="AdsrGateSrc" scopeParamGroup="3" scopeParamId="1" scopeRangeMin="0"
                scopeRangeMax="2147483647" scopeDBRef="0.00000000000000000000" valueType="1" uiResetValue="0.00000000000000000000" uiSkewFactor="1.00000000000000000000"
                skewUIOnly="0" uiRangeMin="0.00000000000000000000" uiRangeMax="2.00000000000000000000" uiRangeInterval="1" uiSuffix="" uiSkewMidpoint="">
@@ -169,17 +170,20 @@
       </settings>
     </parameter>
     <parameter name="AdsrAtt" scopeRangeMin="0" scopeRangeMax="2147483647" scopeDBRef="0" valueType="0" uiResetValue="0" uiSkewFactor="0.28881141543388366699"
-               skewUIOnly="0" uiRangeMin="3.75" uiRangeMax="5000" uiRangeInterval="0.01" uiSuffix="ms" scopeRangeMinFlt="0" scopeRangeMaxFlt="1"
-               uiSkewMidpoint="457" scopeParamGroup="3" scopeParamId="2" shortDescription="Att" fullDescription="AdsrAtt"/>
+               skewUIOnly="0" uiRangeMin="3.75" uiRangeMax="5000" uiRangeInterval="0.1" uiSuffix="ms" scopeRangeMinFlt="0" scopeRangeMaxFlt="1"
+               uiSkewMidpoint="457" scopeParamGroup="3" scopeParamId="2" shortDescription="Att" fullDescription="AdsrAtt" pluginAutomatable="1"
+               editableInScopeUI="1" editableInPluginUI="1"/>
     <parameter name="AdsrDec" scopeRangeMin="0" scopeRangeMax="2147483647" scopeDBRef="0" valueType="0" uiResetValue="457" uiSkewFactor="0.28881141543388366699"
-               skewUIOnly="0" uiRangeMin="3.75" uiRangeMax="5000" uiRangeInterval="0.01" uiSuffix="ms" scopeRangeMinFlt="0" scopeRangeMaxFlt="1"
-               uiSkewMidpoint="457" scopeParamGroup="3" scopeParamId="3" shortDescription="Dec" fullDescription="AdsrDec"/>
+               skewUIOnly="0" uiRangeMin="3.75" uiRangeMax="5000" uiRangeInterval="0.1" uiSuffix="ms" scopeRangeMinFlt="0" scopeRangeMaxFlt="1"
+               uiSkewMidpoint="457" scopeParamGroup="3" scopeParamId="3" shortDescription="Dec" fullDescription="AdsrDec" pluginAutomatable="1"
+               editableInScopeUI="1" editableInPluginUI="1"/>
     <parameter name="AdsrSus" scopeRangeMin="0" scopeRangeMax="2147483647" scopeDBRef="0" valueType="0" uiResetValue="64" uiSkewFactor="1.00000000000000000000"
                skewUIOnly="0" uiRangeMin="0" uiRangeMax="127" uiRangeInterval="1" uiSuffix="" scopeRangeMinFlt="0" scopeRangeMaxFlt="1"
                uiSkewMidpoint="" scopeParamGroup="3" scopeParamId="4" shortDescription="Sus" fullDescription="AdsrSus"/>
     <parameter name="AdsrRel" scopeRangeMin="0" scopeRangeMax="2147483647" scopeDBRef="0" valueType="0" uiResetValue="347" uiSkewFactor="0.28881141543388366699"
-               skewUIOnly="0" uiRangeMin="3.75" uiRangeMax="5000" uiRangeInterval="0.01" uiSuffix="ms" scopeRangeMinFlt="0" scopeRangeMaxFlt="1"
-               uiSkewMidpoint="457" scopeParamGroup="3" scopeParamId="5" shortDescription="Rel" fullDescription="AdsrRel"/>
+               skewUIOnly="0" uiRangeMin="3.75" uiRangeMax="5000" uiRangeInterval="0.1" uiSuffix="ms" scopeRangeMinFlt="0" scopeRangeMaxFlt="1"
+               uiSkewMidpoint="457" scopeParamGroup="3" scopeParamId="5" shortDescription="Rel" fullDescription="AdsrRel" pluginAutomatable="1"
+               editableInScopeUI="1" editableInPluginUI="1"/>
     <parameter name="AdsrSlp" scopeRangeMin="0" scopeRangeMax="2147483647" scopeDBRef="0" valueType="0" uiResetValue="64" uiSkewFactor="1.00000000000000000000"
                skewUIOnly="0" uiRangeMin="0" uiRangeMax="127" uiRangeInterval="1" uiSuffix="" scopeRangeMinFlt="0" scopeRangeMaxFlt="1"
                uiSkewMidpoint="" scopeParamGroup="3" scopeParamId="6" shortDescription="Slope" fullDescription="AdsrSlp"/>
@@ -193,11 +197,13 @@
       </settings>
     </parameter>
     <parameter name="AdAtt" scopeRangeMin="0" scopeRangeMax="2147483647" scopeDBRef="0" valueType="0" uiResetValue="454" uiSkewFactor="0.28819581866264343262"
-               skewUIOnly="0" uiRangeMin="3" uiRangeMax="5000" uiRangeInterval="0.01" uiSuffix="ms" scopeRangeMinFlt="0" scopeRangeMaxFlt="1"
-               uiSkewMidpoint="454" scopeParamGroup="3" scopeParamId="9" shortDescription="Att" fullDescription="AdAtt"/>
+               skewUIOnly="0" uiRangeMin="3" uiRangeMax="5000" uiRangeInterval="0.1" uiSuffix="ms" scopeRangeMinFlt="0" scopeRangeMaxFlt="1"
+               uiSkewMidpoint="454" scopeParamGroup="3" scopeParamId="9" shortDescription="Att" fullDescription="AdAtt" pluginAutomatable="1"
+               editableInScopeUI="1" editableInPluginUI="1"/>
     <parameter name="AdDec" scopeRangeMin="0" scopeRangeMax="2147483647" scopeDBRef="0" valueType="0" uiResetValue="454" uiSkewFactor="0.28819581866264343262"
-               skewUIOnly="0" uiRangeMin="3" uiRangeMax="5000" uiRangeInterval="0.01" uiSuffix="ms" scopeRangeMinFlt="0" scopeRangeMaxFlt="1"
-               uiSkewMidpoint="454" scopeParamGroup="3" scopeParamId="10" shortDescription="Dec" fullDescription="AdDec"/>
+               skewUIOnly="0" uiRangeMin="3" uiRangeMax="5000" uiRangeInterval="0.1" uiSuffix="ms" scopeRangeMinFlt="0" scopeRangeMaxFlt="1"
+               uiSkewMidpoint="454" scopeParamGroup="3" scopeParamId="10" shortDescription="Dec" fullDescription="AdDec" pluginAutomatable="1"
+               editableInScopeUI="1" editableInPluginUI="1"/>
     <parameter name="AdAttSlp" scopeRangeMin="0" scopeRangeMax="2147483647" scopeDBRef="0" valueType="0" uiResetValue="64" uiSkewFactor="1.00000000000000000000"
                skewUIOnly="0" uiRangeMin="0" uiRangeMax="127" uiRangeInterval="1" uiSuffix="" scopeRangeMinFlt="0" scopeRangeMaxFlt="1"
                uiSkewMidpoint="" scopeParamGroup="3" scopeParamId="11" shortDescription="AttSlp" fullDescription="AdAttSlp"/>
@@ -209,8 +215,9 @@
                uiSkewMidpoint="" scopeParamGroup="3" scopeParamId="14" shortDescription="Sens" fullDescription="RandGtSens" pluginAutomatable="1"
                editableInScopeUI="1" editableInPluginUI="1"/>
     <parameter name="LpCf" scopeRangeMin="0" scopeRangeMax="2147483647" scopeDBRef="0" valueType="0" uiResetValue="2000" uiSkewFactor="0.29985147714614868164"
-               skewUIOnly="0" uiRangeMin="20" uiRangeMax="20000" uiRangeInterval="0.01" uiSuffix="Hz" scopeRangeMinFlt="0" scopeRangeMaxFlt="1"
-               uiSkewMidpoint="2000" scopeParamGroup="4" scopeParamId="1" shortDescription="LpCf" fullDescription="LpCf"/>
+               skewUIOnly="0" uiRangeMin="20" uiRangeMax="20000" uiRangeInterval="1" uiSuffix="Hz" scopeRangeMinFlt="0" scopeRangeMaxFlt="1"
+               uiSkewMidpoint="2000" scopeParamGroup="4" scopeParamId="1" shortDescription="LpCf" fullDescription="LpCf" pluginAutomatable="1"
+               editableInScopeUI="1" editableInPluginUI="1"/>
     <parameter name="LpCfm1" scopeRangeMin="0" scopeRangeMax="2147483647" scopeDBRef="0" valueType="0" uiResetValue="0.00000000000000000000"
                uiSkewFactor="1.00000000000000000000" skewUIOnly="0" uiRangeMin="-100" uiRangeMax="100" uiRangeInterval="1" uiSuffix="" scopeRangeMinFlt="0"
                scopeRangeMaxFlt="1" uiSkewMidpoint="" scopeParamGroup="4" scopeParamId="2" shortDescription="LpCfm1" fullDescription="LpCfm1"/>
@@ -240,8 +247,9 @@
                uiSkewFactor="1.00000000000000000000" skewUIOnly="0" uiRangeMin="-100" uiRangeMax="100" uiRangeInterval="1" uiSuffix="" scopeRangeMinFlt="0"
                scopeRangeMaxFlt="1" uiSkewMidpoint="" scopeParamGroup="4" scopeParamId="10" shortDescription="PMod3B" fullDescription="PMod3B"/>
     <parameter name="HpCf" scopeRangeMin="0" scopeRangeMax="2147483647" scopeDBRef="0" valueType="0" uiResetValue="2000" uiSkewFactor="0.29985147714614868164"
-               skewUIOnly="0" uiRangeMin="20" uiRangeMax="20000" uiRangeInterval="0.01" uiSuffix="Hz" scopeRangeMinFlt="0" scopeRangeMaxFlt="1"
-               uiSkewMidpoint="2000" scopeParamGroup="5" scopeParamId="1" shortDescription="HpCf" fullDescription="HpCf"/>
+               skewUIOnly="0" uiRangeMin="20" uiRangeMax="20000" uiRangeInterval="1" uiSuffix="Hz" scopeRangeMinFlt="0" scopeRangeMaxFlt="1"
+               uiSkewMidpoint="2000" scopeParamGroup="5" scopeParamId="1" shortDescription="HpCf" fullDescription="HpCf" pluginAutomatable="1"
+               editableInScopeUI="1" editableInPluginUI="1"/>
     <parameter name="HpCfm1" scopeRangeMin="0" scopeRangeMax="2147483647" scopeDBRef="0" valueType="0" uiResetValue="0.00000000000000000000"
                uiSkewFactor="1.00000000000000000000" skewUIOnly="0" uiRangeMin="-100" uiRangeMax="100" uiRangeInterval="1" uiSuffix="" scopeRangeMinFlt="0"
                scopeRangeMaxFlt="1" uiSkewMidpoint="" scopeParamGroup="5" scopeParamId="2" shortDescription="HpCfm1" fullDescription="HpCfm1"/>
@@ -270,12 +278,13 @@
                skewUIOnly="0" uiRangeMin="-100" uiRangeMax="100" uiRangeInterval="1" uiSuffix="" scopeRangeMinFlt="0" scopeRangeMaxFlt="1"
                uiSkewMidpoint="" scopeParamGroup="5" scopeParamId="10" shortDescription="Offset" fullDescription="VolMod2"/>
     <parameter name="Del1DT1" scopeRangeMin="0" scopeRangeMax="2147483647" scopeDBRef="0" valueType="0" uiResetValue="171" uiSkewFactor="0.19879971444606781006"
-               skewUIOnly="0" uiRangeMin="4" uiRangeMax="5461" uiRangeInterval="0.1" uiSuffix="" scopeRangeMinFlt="0" scopeRangeMaxFlt="1"
+               skewUIOnly="0" uiRangeMin="4" uiRangeMax="5461" uiRangeInterval="0.1" uiSuffix="ms" scopeRangeMinFlt="0" scopeRangeMaxFlt="1"
                uiSkewMidpoint="171" scopeParamGroup="6" scopeParamId="1" shortDescription="Del1DT1" fullDescription="Del1DT1" pluginAutomatable="1"
                editableInScopeUI="1" editableInPluginUI="1"/>
     <parameter name="Del1DT2" scopeRangeMin="0" scopeRangeMax="2147483647" scopeDBRef="0" valueType="0" uiResetValue="171" uiSkewFactor="0.19879971444606781006"
-               skewUIOnly="0" uiRangeMin="4" uiRangeMax="5461" uiRangeInterval="0.01" uiSuffix="ms" scopeRangeMinFlt="0" scopeRangeMaxFlt="1"
-               uiSkewMidpoint="171" scopeParamGroup="6" scopeParamId="2" shortDescription="Del1DT2" fullDescription="Del1DT2"/>
+               skewUIOnly="0" uiRangeMin="4" uiRangeMax="5461" uiRangeInterval="0.1" uiSuffix="ms" scopeRangeMinFlt="0" scopeRangeMaxFlt="1"
+               uiSkewMidpoint="171" scopeParamGroup="6" scopeParamId="2" shortDescription="Del1DT2" fullDescription="Del1DT2" pluginAutomatable="1"
+               editableInScopeUI="1" editableInPluginUI="1"/>
     <parameter name="Del1Fb" scopeRangeMin="0" scopeRangeMax="2147483647" scopeDBRef="0" valueType="0" uiResetValue="0.00000000000000000000"
                uiSkewFactor="1.00000000000000000000" skewUIOnly="0" uiRangeMin="-100" uiRangeMax="100" uiRangeInterval="1" uiSuffix="" scopeRangeMinFlt="0"
                scopeRangeMaxFlt="1" uiSkewMidpoint="" scopeParamGroup="6" scopeParamId="3" shortDescription="Del1Fb" fullDescription="Del1Fb"/>
@@ -308,11 +317,13 @@
                uiSkewMidpoint="" scopeParamGroup="6" scopeParamId="14" shortDescription="Gain3" fullDescription="Mix3B3" pluginAutomatable="1"
                editableInScopeUI="1" editableInPluginUI="1"/>
     <parameter name="Del2DT1" scopeRangeMin="0" scopeRangeMax="2147483647" scopeDBRef="0" valueType="0" uiResetValue="171" uiSkewFactor="0.19879971444606781006"
-               skewUIOnly="0" uiRangeMin="4" uiRangeMax="5461" uiRangeInterval="0.01" uiSuffix="ms" scopeRangeMinFlt="0" scopeRangeMaxFlt="1"
-               uiSkewMidpoint="171" scopeParamGroup="6" scopeParamId="5" shortDescription="Del2DT1" fullDescription="Del2DT1"/>
+               skewUIOnly="0" uiRangeMin="4" uiRangeMax="5461" uiRangeInterval="0.1" uiSuffix="ms" scopeRangeMinFlt="0" scopeRangeMaxFlt="1"
+               uiSkewMidpoint="171" scopeParamGroup="6" scopeParamId="5" shortDescription="Del2DT1" fullDescription="Del2DT1" pluginAutomatable="1"
+               editableInScopeUI="1" editableInPluginUI="1"/>
     <parameter name="Del2DT2" scopeRangeMin="0" scopeRangeMax="2147483647" scopeDBRef="0" valueType="0" uiResetValue="171" uiSkewFactor="0.19879971444606781006"
-               skewUIOnly="0" uiRangeMin="4" uiRangeMax="5461" uiRangeInterval="0.01" uiSuffix="ms" scopeRangeMinFlt="0" scopeRangeMaxFlt="1"
-               uiSkewMidpoint="171" scopeParamGroup="6" scopeParamId="6" shortDescription="Del2DT2" fullDescription="Del2DT2"/>
+               skewUIOnly="0" uiRangeMin="4" uiRangeMax="5461" uiRangeInterval="0.1" uiSuffix="ms" scopeRangeMinFlt="0" scopeRangeMaxFlt="1"
+               uiSkewMidpoint="171" scopeParamGroup="6" scopeParamId="6" shortDescription="Del2DT2" fullDescription="Del2DT2" pluginAutomatable="1"
+               editableInScopeUI="1" editableInPluginUI="1"/>
     <parameter name="Del2Fb" scopeRangeMin="0" scopeRangeMax="2147483647" scopeDBRef="0" valueType="0" uiResetValue="0" uiSkewFactor="1.00000000000000000000"
                skewUIOnly="0" uiRangeMin="-100" uiRangeMax="100" uiRangeInterval="1" uiSuffix="" scopeRangeMinFlt="0" scopeRangeMaxFlt="1"
                uiSkewMidpoint="" scopeParamGroup="6" scopeParamId="7" shortDescription="Del2Fb" fullDescription="Del2Fb"/>
@@ -534,11 +545,11 @@
     <parameter name="VU1" scopeRangeMin="0" scopeRangeMax="2147483647" scopeDBRef="0" valueType="0" uiResetValue="0.00000000000000000000"
                uiSkewFactor="1.00000000000000000000" skewUIOnly="0" uiRangeMin="0" uiRangeMax="100" uiRangeInterval="1" uiSuffix="" scopeRangeMinFlt="0"
                scopeRangeMaxFlt="1" uiSkewMidpoint="" scopeParamGroup="8" scopeParamId="7" shortDescription="VU1" fullDescription="VU1"
-               pluginAutomatable="0" editableInScopeUI="0" editableInPluginUI="0"/>
+               pluginAutomatable="0" editableInScopeUI="1" editableInPluginUI="1"/>
     <parameter name="VU2" scopeRangeMin="0" scopeRangeMax="2147483647" scopeDBRef="0" valueType="0" uiResetValue="0.00000000000000000000"
                uiSkewFactor="1.00000000000000000000" skewUIOnly="0" uiRangeMin="0" uiRangeMax="100" uiRangeInterval="1" uiSuffix="" scopeRangeMinFlt="0"
                scopeRangeMaxFlt="1" uiSkewMidpoint="" scopeParamGroup="8" scopeParamId="8" shortDescription="VU2" fullDescription="VU2"
-               pluginAutomatable="0" editableInScopeUI="0" editableInPluginUI="0"/>
+               pluginAutomatable="0" editableInScopeUI="1" editableInPluginUI="1"/>
     <parameter name="MatrixOSC1FDest" shortDescription="OSC1F" fullDescription="Matrix OSC1F Destination" scopeParamGroup="10" scopeParamId="1"
                scopeRangeMin="0" scopeRangeMax="2147483647" scopeDBRef="0.00000000000000000000" valueType="1" uiResetValue="0.00000000000000000000"
                uiSkewFactor="1.00000000000000000000" skewUIOnly="0" uiRangeMin="0.00000000000000000000" uiRangeMax="33.00000000000000000000"
