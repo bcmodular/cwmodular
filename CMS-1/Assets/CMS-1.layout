@@ -342,7 +342,7 @@
             </slider>
         </widgettemplates>
         <!--Main Component-->
-        <component backgroundimage="CWMbackgrDark.png" backgroundcolour="ffffffff" lfid="maintheme">
+        <component backgroundimage="CWMbackgrBlack.png" backgroundcolour="ffffffff" lfid="maintheme">
             <backgroundimageplacement>ytop</backgroundimageplacement>
             <bounds height="746" width="1280" />
             <!--ScopeSync Header-->
@@ -611,14 +611,14 @@
                         <bounds relativerectangle="45, 0, left + 60, top + 70" />
                         <tab idx="1" name="LFOKnobTab">
                             <component name="LFOKnobTabComponent" backgroundcolour="00ff0000">
-                                <slider name="LfoFrqSrcKnob" id="LfoFrqSrcKnobSlider" popupenabled="true" lfid="white2darkknob">
+                                <slider name="LfoFrqSrcKnob" id="LfoFrqSrcKnobSlider" popupenabled="false" lfid="white2darkknob">
                                     <bounds relativerectangle="5, 10, left + 40, top + 45" />
                                     <textbox position="none" />
                                 </slider>
-                                <label name="LfoFrqSrcKnob" id="LfoFrqSrcKnobLabel" parametertextdisplay="shortdescription" lfid="maintheme" wtid="parameterlabel">
-                                    <bounds relativerectangle="LfoFrqSrcKnobSlider.left, LfoFrqSrcKnobSlider.bottom + 2, LfoFrqSrcKnobSlider.right, top + 8  " />
+                                <slider name="LfoFrqSrcKnobBar" id="LfoFrqSrcKnobBar" wtid="knobbar">
+                                    <bounds relativerectangle="LfoFrqSrcKnobSlider.left - 2, LfoFrqSrcKnobSlider.bottom - 2, LfoFrqSrcKnobSlider.right + 5, top + 15" />
                                     <mappingparent componentname="LfoFrqSrcKnob" componenttype="slider" />
-                                </label>
+                                </slider>
                             </component>
                         </tab>
                         <tab idx="2" name="LFOFrqDivTab">
@@ -864,11 +864,11 @@
                     <rectangle outlinethickness="2" outlinecolour="00000000" fillcolour="ffdbdbdb" cornersize="5">
                         <bounds fillparent="true" />
                     </rectangle>
-                    <slider name="LpCf" id="LpCfSlider" lfid="CFknob" popupenabled="true" encodersnap="true">
+                    <slider name="LpCf" id="LpCfSlider" lfid="CFknob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="parent.left + 5, 10, left + 40, top + 45" />
                         <textbox position="none" />
                     </slider>
-                    <slider name="LpCfm1" id="LpCfm1Slider" lfid="bipolar100knob" popupenabled="true" encodersnap="true">
+                    <slider name="LpCfm1" id="LpCfm1Slider" lfid="bipolar100knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="LpCfSlider.right + 8, LpCfSlider.top, left + LpCfSlider.width, top +  LpCfSlider.height " />
                         <textbox position="none" />
                     </slider>
@@ -876,7 +876,7 @@
                         <bounds relativerectangle="LpCfm1Slider.left, LpCfm1Slider.bottom + 2, LpCfm1Slider.right, top + 8" />
                         <mappingparent componentname="LpCfm1" componenttype="slider" />
                     </label>
-                    <slider name="LpCfm2" id="LpCfm2Slider" lfid="bipolar100knob" popupenabled="true" encodersnap="true">
+                    <slider name="LpCfm2" id="LpCfm2Slider" lfid="bipolar100knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="LpCfm1Slider.right + 8, LpCfSlider.top, left + LpCfSlider.width, top +  LpCfSlider.height " />
                         <textbox position="none" />
                     </slider>
@@ -884,7 +884,7 @@
                         <bounds relativerectangle="LpCfm2Slider.left, LpCfm2Slider.bottom + 2, LpCfm2Slider.right, top + 8" />
                         <mappingparent componentname="LpCfm2" componenttype="slider" />
                     </label>
-                    <slider name="LpQ" id="LpQSlider" lfid="0-127Knob" popupenabled="true" encodersnap="true">
+                    <slider name="LpQ" id="LpQSlider" lfid="0-127Knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="LpCfm2Slider.right + 8, LpCfSlider.top, left + LpCfSlider.width, top +  LpCfSlider.height " />
                         <textbox position="none" />
                     </slider>
@@ -906,11 +906,11 @@
                     <rectangle outlinethickness="2" outlinecolour="00000000" fillcolour="ffdbdbdb" cornersize="5">
                         <bounds fillparent="true" />
                     </rectangle>
-                    <slider name="HpCf" id="HpCfSlider" lfid="CFknob" popupenabled="true" encodersnap="true">
+                    <slider name="HpCf" id="HpCfSlider" lfid="CFknob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="parent.left + 5, 10, left + 40, top + 45" />
                         <textbox position="none" />
                     </slider>
-                    <slider name="HpCfm1" id="HpCfm1Slider" lfid="bipolar100knob" popupenabled="true" encodersnap="true">
+                    <slider name="HpCfm1" id="HpCfm1Slider" lfid="bipolar100knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="HpCfSlider.right + 8, HpCfSlider.top, left + HpCfSlider.width, top +  HpCfSlider.height " />
                         <textbox position="none" />
                     </slider>
@@ -918,7 +918,7 @@
                         <bounds relativerectangle="HpCfm1Slider.left, HpCfm1Slider.bottom + 2, HpCfm1Slider.right, top + 8" />
                         <mappingparent componentname="HpCfm1" componenttype="slider" />
                     </label>
-                    <slider name="HpCfm2" id="HpCfm2Slider" lfid="bipolar100knob" popupenabled="true" encodersnap="true">
+                    <slider name="HpCfm2" id="HpCfm2Slider" lfid="bipolar100knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="HpCfm1Slider.right + 8, HpCfSlider.top, left + HpCfSlider.width, top +  HpCfSlider.height " />
                         <textbox position="none" />
                     </slider>
@@ -926,7 +926,7 @@
                         <bounds relativerectangle="HpCfm2Slider.left, HpCfm2Slider.bottom + 2, HpCfm2Slider.right, top + 8" />
                         <mappingparent componentname="HpCfm2" componenttype="slider" />
                     </label>
-                    <slider name="HpQ" id="HpQSlider" lfid="0-127Knob" popupenabled="true" encodersnap="true">
+                    <slider name="HpQ" id="HpQSlider" lfid="0-127Knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="HpCfm2Slider.right + 8, HpCfSlider.top, left + HpCfSlider.width, top +  HpCfSlider.height " />
                         <textbox position="none" />
                     </slider>
@@ -948,7 +948,7 @@
                     <rectangle outlinethickness="2" outlinecolour="00000000" fillcolour="ffdbdbdb" cornersize="5">
                         <bounds fillparent="true" />
                     </rectangle>
-                    <slider name="Del1DT1" id="Del1DT1Slider" lfid="white2darkknob" popupenabled="true" encodersnap="true">
+                    <slider name="Del1DT1" id="Del1DT1Slider" lfid="white2darkknob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="5, 10, left + 40, top + 45" />
                         <textbox position="none" />
                     </slider>
@@ -956,7 +956,7 @@
                         <bounds relativerectangle="3, Del1DT1Slider.bottom - 2, left + 44, top + 15" />
                         <mappingparent componentname="Del1DT1" componenttype="slider" />
                     </slider>
-                    <slider name="Del1DT2" id="Del1DT2Slider" lfid="white2darkknob" popupenabled="true" encodersnap="true">
+                    <slider name="Del1DT2" id="Del1DT2Slider" lfid="white2darkknob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="Del1DT1Slider.right + 8, Del1DT1Slider.top, left + Del1DT1Slider.width, top +  Del1DT1Slider.height " />
                         <textbox position="none" />
                     </slider>
@@ -964,7 +964,7 @@
                         <bounds relativerectangle="Del1DT1Slider.right + 8, Del1DT2Slider.bottom - 2, left + 44, top + 15" />
                         <mappingparent componentname="Del1DT2" componenttype="slider" />
                     </slider>
-                    <slider name="Del1Fb" id="Del1FbSlider" lfid="bipolar100knob" popupenabled="true" encodersnap="true">
+                    <slider name="Del1Fb" id="Del1FbSlider" lfid="bipolar100knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="Del1DT2Slider.right + 8, Del1DT2Slider.top, left + Del1DT2Slider.width, top +  Del1DT1Slider.height " />
                         <textbox position="none" />
                     </slider>
@@ -972,7 +972,7 @@
                         <bounds relativerectangle="Del1FbSlider.left, Del1FbSlider.bottom + 2, Del1FbSlider.right, top + 8" />
                         <mappingparent componentname="Del1Fb" componenttype="slider" />
                     </label>
-                    <slider name="Del1Gain" id="Del1GainSlider" lfid="0-127Knob" popupenabled="true" encodersnap="true">
+                    <slider name="Del1Gain" id="Del1GainSlider" lfid="0-127Knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="Del1FbSlider.right + 8, Del1FbSlider.top, left + Del1FbSlider.width, top +  Del1DT1Slider.height " />
                         <textbox position="none" />
                     </slider>
@@ -990,15 +990,15 @@
                     <rectangle outlinethickness="2" outlinecolour="00000000" fillcolour="ffdbdbdb" cornersize="5">
                         <bounds fillparent="true" />
                     </rectangle>
-                    <slider name="Del2DT1" id="Del2DT1Slider" lfid="white2darkknob" popupenabled="true" encodersnap="true">
+                    <slider name="Del2DT1" id="Del2DT1Slider" lfid="white2darkknob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="parent.left + 5, 10, left + 40, top + 45" />
                         <textbox position="none" />
                     </slider>
-                    <slider name="Del2DT2" id="Del2DT2Slider" lfid="white2darkknob" popupenabled="true" encodersnap="true">
+                    <slider name="Del2DT2" id="Del2DT2Slider" lfid="white2darkknob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="Del2DT1Slider.right + 8, Del2DT1Slider.top, left + Del2DT1Slider.width, top +  Del2DT1Slider.height " />
                         <textbox position="none" />
                     </slider>
-                    <slider name="Del2Fb" id="Del2FbSlider" lfid="bipolar100knob" popupenabled="true" encodersnap="true">
+                    <slider name="Del2Fb" id="Del2FbSlider" lfid="bipolar100knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="Del2DT2Slider.right + 8, Del2DT2Slider.top, left + Del2DT2Slider.width, top +  Del2DT1Slider.height " />
                         <textbox position="none" />
                     </slider>
@@ -1006,7 +1006,7 @@
                         <bounds relativerectangle="Del2FbSlider.left, Del2FbSlider.bottom + 2, Del2FbSlider.right, top + 8" />
                         <mappingparent componentname="Del2Fb" componenttype="slider" />
                     </label>
-                    <slider name="Del2Gain" id="Del2GainSlider" lfid="0-127Knob" popupenabled="true" encodersnap="true">
+                    <slider name="Del2Gain" id="Del2GainSlider" lfid="0-127Knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="Del2FbSlider.right + 8, Del2FbSlider.top, left + Del2FbSlider.width, top +  Del2DT1Slider.height " />
                         <textbox position="none" />
                     </slider>
@@ -1036,7 +1036,7 @@
                     <rectangle outlinethickness="2" outlinecolour="00000000" fillcolour="ffdbdbdb" cornersize="5">
                         <bounds fillparent="true" />
                     </rectangle>
-                    <slider name="ExpVcaSlp" id="ExpVcaSlpSlider" lfid="0-127Knob" popupenabled="true" encodersnap="true" debugwidgetposition="false">
+                    <slider name="ExpVcaSlp" id="ExpVcaSlpSlider" lfid="0-127Knob" popupenabled="false" encodersnap="true" debugwidgetposition="false">
                         <bounds relativerectangle="parent.left + 5, 10, left + 40, top + 45" />
                         <textbox position="none" />
                     </slider>
@@ -1044,7 +1044,7 @@
                         <bounds relativerectangle="ExpVcaSlpSlider.left, ExpVcaSlpSlider.bottom + 2, ExpVcaSlpSlider.right, top + 8  " />
                         <mappingparent componentname="ExpVcaSlp" componenttype="slider" />
                     </label>
-                    <slider name="AdsrVelo" id="AdsrVeloSlider" lfid="bipolar100knob" popupenabled="true" encodersnap="true">
+                    <slider name="AdsrVelo" id="AdsrVeloSlider" lfid="bipolar100knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="ExpVcaSlpSlider.right + 8, ExpVcaSlpSlider.top, left + ExpVcaSlpSlider.width, top +  ExpVcaSlpSlider.height " />
                         <textbox position="none" />
                     </slider>
@@ -1052,7 +1052,7 @@
                         <bounds relativerectangle="AdsrVeloSlider.left, AdsrVeloSlider.bottom + 2, AdsrVeloSlider.right, top + 8  " />
                         <mappingparent componentname="AdsrVelo" componenttype="slider" />
                     </label>
-                    <slider name="AdVelo" id="AdVeloSlider" lfid="bipolar100knob" popupenabled="true" encodersnap="true">
+                    <slider name="AdVelo" id="AdVeloSlider" lfid="bipolar100knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="AdsrVeloSlider.right + 8, AdsrVeloSlider.top, left + AdsrVeloSlider.width, top +  AdsrVeloSlider.height " />
                         <textbox position="none" />
                     </slider>
@@ -1060,7 +1060,7 @@
                         <bounds relativerectangle="AdVeloSlider.left, AdVeloSlider.bottom + 2, AdVeloSlider.right, top + 8  " />
                         <mappingparent componentname="AdVelo" componenttype="slider" />
                     </label>
-                    <slider name="ATSmooth" id="ATSmoothSlider" lfid="0-127Knob" popupenabled="true" encodersnap="true" inverted="true">
+                    <slider name="ATSmooth" id="ATSmoothSlider" lfid="0-127Knob" popupenabled="false" encodersnap="true" inverted="true">
                         <bounds relativerectangle="AdVeloSlider.right + 8, AdVeloSlider.top, left + AdVeloSlider.width, top +  AdVeloSlider.height " />
                         <textbox position="none" />
                     </slider>
@@ -1093,11 +1093,11 @@
                     <rectangle outlinethickness="2" outlinecolour="00000000" fillcolour="ffdbdbdb" cornersize="5">
                         <bounds fillparent="true" />
                     </rectangle>
-                    <slider name="ConstValA" id="ConstValASlider" lfid="bipolar100knob" popupenabled="true" encodersnap="true" debugwidgetposition="false">
+                    <slider name="ConstValA" id="ConstValASlider" lfid="bipolar100knob" popupenabled="false" encodersnap="true" debugwidgetposition="false">
                         <bounds relativerectangle="parent.left + 5, 10, left + 40, top + 45" />
                         <textbox position="none" />
                     </slider>
-                    <slider name="ConstValB" id="ConstValBSlider" lfid="bipolar100knob" popupenabled="true" encodersnap="true">
+                    <slider name="ConstValB" id="ConstValBSlider" lfid="bipolar100knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="ConstValASlider.right + 60, ConstValASlider.top, left + ConstValASlider.width, top +  ConstValASlider.height " />
                         <textbox position="none" />
                     </slider>
@@ -1135,7 +1135,7 @@
                     <rectangle outlinethickness="2" outlinecolour="00000000" fillcolour="ffdbdbdb" cornersize="5">
                         <bounds fillparent="true" />
                     </rectangle>
-                    <slider name="PortaTime" id="PortaTimeSlider" lfid="0-127Knob" popupenabled="true" encodersnap="true" debugwidgetposition="false">
+                    <slider name="PortaTime" id="PortaTimeSlider" lfid="0-127Knob" popupenabled="false" encodersnap="true" debugwidgetposition="false">
                         <bounds relativerectangle="parent.left + 5, 10, left + 40, top + 45" />
                         <textbox position="none" />
                     </slider>
@@ -1189,7 +1189,7 @@
                         </tab>
                         <tab idx="2" name="SeqFrqDivTab">
                             <component name="SeqFrqDivTabComponent" backgroundcolour="0000ff00">
-                                <slider name="SeqFrqSrcDiv" id="SeqFrqSrcDivSlider" popupenabled="true" lfid="SeqDivKnob">
+                                <slider name="SeqFrqSrcDiv" id="SeqFrqSrcDivSlider" popupenabled="false" lfid="SeqDivKnob">
                                     <bounds relativerectangle="5, 10, left + 40, top + 45" />
                                     <textbox position="none" />
                                 </slider>
@@ -1207,7 +1207,7 @@
                             </component>
                         </tab>
                     </tabbedcomponent>
-                    <slider name="SeqStartStep" id="SeqStartStepSlider" lfid="Seq1-8" popupenabled="true" encodersnap="true" debugwidgetposition="false">
+                    <slider name="SeqStartStep" id="SeqStartStepSlider" lfid="Seq1-8" popupenabled="false" encodersnap="true" debugwidgetposition="false">
                         <bounds relativerectangle="parent.left - 3, 10, left + 40, top + 45" />
                         <textbox position="none" />
                     </slider>
@@ -1215,7 +1215,7 @@
                         <bounds relativerectangle="SeqStartStepSlider.left, SeqStartStepSlider.bottom + 2, SeqStartStepSlider.right, top + 8  " />
                         <mappingparent componentname="SeqStartStep" componenttype="slider" />
                     </label>
-                    <slider name="SeqLength" id="SeqLengthSlider" lfid="Seq1-8" popupenabled="true" encodersnap="true">
+                    <slider name="SeqLength" id="SeqLengthSlider" lfid="Seq1-8" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="SeqStartStepSlider.right + 8, SeqStartStepSlider.top, left + SeqStartStepSlider.width, top + SeqStartStepSlider.height" />
                         <textbox position="none" />
                     </slider>
@@ -1223,7 +1223,7 @@
                         <bounds relativerectangle="SeqLengthSlider.left, SeqLengthSlider.bottom + 2, SeqLengthSlider.right, top + 8  " />
                         <mappingparent componentname="SeqLength" componenttype="slider" />
                     </label>
-                    <slider name="SeqSwing" id="SeqSwingSlider" lfid="0-127Knob" popupenabled="true" encodersnap="true">
+                    <slider name="SeqSwing" id="SeqSwingSlider" lfid="0-127Knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="SeqLengthSlider.right + 8, SeqLengthSlider.top, left + SeqLengthSlider.width, top + SeqStartStepSlider.height" />
                         <textbox position="none" />
                     </slider>
@@ -1381,7 +1381,7 @@
                     <rectangle outlinethickness="2" outlinecolour="00000000" fillcolour="ffdbdbdb" cornersize="5">
                         <bounds fillparent="true" />
                     </rectangle>
-                    <slider name="PitchSeq1" id="PitchSeq1slider" lfid="bipolar24knob" popupenabled="true" encodersnap="true" debugwidgetposition="false">
+                    <slider name="PitchSeq1" id="PitchSeq1slider" lfid="bipolar24knob" popupenabled="false" encodersnap="true" debugwidgetposition="false">
                         <bounds relativerectangle="0, 15, left + 40, top + 40" />
                         <textbox position="none" />
                     </slider>
@@ -1389,7 +1389,7 @@
                         <bounds relativerectangle="PitchSeq1slider.left, PitchSeq1slider.bottom + 2, PitchSeq1slider.right, top + 8  " />
                         <mappingparent componentname="PitchSeq1" componenttype="slider" />
                     </label>
-                    <slider name="PitchSeq2" id="PitchSeq2slider" lfid="bipolar24knob" popupenabled="true" encodersnap="true" debugwidgetposition="false">
+                    <slider name="PitchSeq2" id="PitchSeq2slider" lfid="bipolar24knob" popupenabled="false" encodersnap="true" debugwidgetposition="false">
                         <bounds relativerectangle="PitchSeq1slider.right - 4, PitchSeq1slider.top, left + PitchSeq1slider.width, top + PitchSeq1slider.height" />
                         <textbox position="none" />
                     </slider>
@@ -1397,7 +1397,7 @@
                         <bounds relativerectangle="PitchSeq2slider.left, PitchSeq2slider.bottom + 2, PitchSeq2slider.right, top + 8  " />
                         <mappingparent componentname="PitchSeq2" componenttype="slider" />
                     </label>
-                    <slider name="PitchSeq3" id="PitchSeq3slider" lfid="bipolar24knob" popupenabled="true" encodersnap="true" debugwidgetposition="false">
+                    <slider name="PitchSeq3" id="PitchSeq3slider" lfid="bipolar24knob" popupenabled="false" encodersnap="true" debugwidgetposition="false">
                         <bounds relativerectangle="PitchSeq2slider.right - 4, PitchSeq2slider.top, left + PitchSeq2slider.width, top + PitchSeq1slider.height" />
                         <textbox position="none" />
                     </slider>
@@ -1405,7 +1405,7 @@
                         <bounds relativerectangle="PitchSeq3slider.left, PitchSeq3slider.bottom + 2, PitchSeq3slider.right, top + 8  " />
                         <mappingparent componentname="PitchSeq3" componenttype="slider" />
                     </label>
-                    <slider name="PitchSeq4" id="PitchSeq4slider" lfid="bipolar24knob" popupenabled="true" encodersnap="true" debugwidgetposition="false">
+                    <slider name="PitchSeq4" id="PitchSeq4slider" lfid="bipolar24knob" popupenabled="false" encodersnap="true" debugwidgetposition="false">
                         <bounds relativerectangle="PitchSeq3slider.right - 4, PitchSeq3slider.top, left + PitchSeq3slider.width, top + PitchSeq1slider.height" />
                         <textbox position="none" />
                     </slider>
@@ -1413,7 +1413,7 @@
                         <bounds relativerectangle="PitchSeq4slider.left, PitchSeq4slider.bottom + 2, PitchSeq4slider.right, top + 8  " />
                         <mappingparent componentname="PitchSeq4" componenttype="slider" />
                     </label>
-                    <slider name="PitchSeq5" id="PitchSeq5slider" lfid="bipolar24knob" popupenabled="true" encodersnap="true">
+                    <slider name="PitchSeq5" id="PitchSeq5slider" lfid="bipolar24knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="PitchSeq4slider.right - 4, PitchSeq4slider.top, left + PitchSeq4slider.width, top + PitchSeq1slider.height" />
                         <textbox position="none" />
                     </slider>
@@ -1421,7 +1421,7 @@
                         <bounds relativerectangle="PitchSeq5slider.left, PitchSeq5slider.bottom + 2, PitchSeq5slider.right, top + 8  " />
                         <mappingparent componentname="PitchSeq5" componenttype="slider" />
                     </label>
-                    <slider name="PitchSeq6" id="PitchSeq6slider" lfid="bipolar24knob" popupenabled="true" encodersnap="true">
+                    <slider name="PitchSeq6" id="PitchSeq6slider" lfid="bipolar24knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="PitchSeq5slider.right - 4, PitchSeq5slider.top, left + PitchSeq5slider.width, top + PitchSeq1slider.height" />
                         <textbox position="none" />
                     </slider>
@@ -1429,7 +1429,7 @@
                         <bounds relativerectangle="PitchSeq6slider.left, PitchSeq6slider.bottom + 2, PitchSeq6slider.right, top + 8  " />
                         <mappingparent componentname="PitchSeq6" componenttype="slider" />
                     </label>
-                    <slider name="PitchSeq7" id="PitchSeq7slider" lfid="bipolar24knob" popupenabled="true" encodersnap="true">
+                    <slider name="PitchSeq7" id="PitchSeq7slider" lfid="bipolar24knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="PitchSeq6slider.right - 4, PitchSeq6slider.top, left + PitchSeq6slider.width, top + PitchSeq1slider.height" />
                         <textbox position="none" />
                     </slider>
@@ -1437,7 +1437,7 @@
                         <bounds relativerectangle="PitchSeq7slider.left, PitchSeq7slider.bottom + 2, PitchSeq7slider.right, top + 8  " />
                         <mappingparent componentname="PitchSeq7" componenttype="slider" />
                     </label>
-                    <slider name="PitchSeq8" id="PitchSeq8slider" lfid="bipolar24knob" popupenabled="true" encodersnap="true">
+                    <slider name="PitchSeq8" id="PitchSeq8slider" lfid="bipolar24knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="PitchSeq7slider.right - 4, PitchSeq7slider.top, left + PitchSeq7slider.width, top + PitchSeq1slider.height" />
                         <textbox position="none" />
                     </slider>
@@ -1459,7 +1459,7 @@
                     <rectangle outlinethickness="2" outlinecolour="00000000" fillcolour="ffdbdbdb" cornersize="5">
                         <bounds fillparent="true" />
                     </rectangle>
-                    <slider name="PMod1A" id="PMod1ASlider" lfid="bipolar100knob" popupenabled="true" encodersnap="true">
+                    <slider name="PMod1A" id="PMod1ASlider" lfid="bipolar100knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="parent.left + 1, 10, left + 40, top + 45" />
                         <textbox position="none" />
                     </slider>
@@ -1467,7 +1467,7 @@
                         <bounds relativerectangle="PMod1ASlider.left, PMod1ASlider.bottom + 2, PMod1ASlider.right, top + 8  " />
                         <mappingparent componentname="PMod1A" componenttype="slider" />
                     </label>
-                    <slider name="PMod1B" id="PMod1BSlider" lfid="bipolar100knob" popupenabled="true" encodersnap="true">
+                    <slider name="PMod1B" id="PMod1BSlider" lfid="bipolar100knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="PMod1ASlider.right + 8, PMod1ASlider.top, left + PMod1ASlider.width, top + PMod1ASlider.height" />
                         <textbox position="none" />
                     </slider>
@@ -1475,7 +1475,7 @@
                         <bounds relativerectangle="PMod1BSlider.left, PMod1BSlider.bottom + 2, PMod1BSlider.right, top + 8  " />
                         <mappingparent componentname="PMod1B" componenttype="slider" />
                     </label>
-                    <slider name="PMod2A" id="PMod2ASlider" lfid="bipolar100knob" popupenabled="true" encodersnap="true">
+                    <slider name="PMod2A" id="PMod2ASlider" lfid="bipolar100knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="PMod1BSlider.right + 8, PMod1BSlider.top, left + PMod1BSlider.width, top + PMod1BSlider.height" />
                         <textbox position="none" />
                     </slider>
@@ -1483,7 +1483,7 @@
                         <bounds relativerectangle="PMod2ASlider.left, PMod2ASlider.bottom + 2, PMod2ASlider.right, top + 8  " />
                         <mappingparent componentname="PMod2A" componenttype="slider" />
                     </label>
-                    <slider name="PMod2B" id="PMod2BSlider" lfid="bipolar100knob" popupenabled="true" encodersnap="true">
+                    <slider name="PMod2B" id="PMod2BSlider" lfid="bipolar100knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="PMod2ASlider.right + 8, PMod2ASlider.top, left + PMod2ASlider.width, top + PMod1BSlider.height" />
                         <textbox position="none" />
                     </slider>
@@ -1491,7 +1491,7 @@
                         <bounds relativerectangle="PMod2BSlider.left, PMod2BSlider.bottom + 2, PMod2BSlider.right, top + 8  " />
                         <mappingparent componentname="PMod2B" componenttype="slider" />
                     </label>
-                    <slider name="PMod3A" id="PMod3ASlider" lfid="bipolar100knob" popupenabled="true" encodersnap="true">
+                    <slider name="PMod3A" id="PMod3ASlider" lfid="bipolar100knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="PMod2BSlider.right + 8, PMod2BSlider.top, left + PMod2BSlider.width, top + PMod1BSlider.height" />
                         <textbox position="none" />
                     </slider>
@@ -1499,7 +1499,7 @@
                         <bounds relativerectangle="PMod3ASlider.left, PMod3ASlider.bottom + 2, PMod3ASlider.right, top + 8  " />
                         <mappingparent componentname="PMod3A" componenttype="slider" />
                     </label>
-                    <slider name="PMod3B" id="PMod3BSlider" lfid="bipolar100knob" popupenabled="true" encodersnap="true">
+                    <slider name="PMod3B" id="PMod3BSlider" lfid="bipolar100knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="PMod3ASlider.right + 8, PMod3ASlider.top, left + PMod3ASlider.width, top + PMod1BSlider.height" />
                         <textbox position="none" />
                     </slider>
@@ -1530,7 +1530,7 @@
                     <rectangle outlinethickness="2" outlinecolour="00000000" fillcolour="ffdbdbdb" cornersize="5">
                         <bounds fillparent="true" />
                     </rectangle>
-                    <slider name="Mix2A1" id="Mix2A1Slider" lfid="0-127Knob" popupenabled="true" encodersnap="true">
+                    <slider name="Mix2A1" id="Mix2A1Slider" lfid="0-127Knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="parent.left + 1, 10, left + 40, top + 45" />
                         <textbox position="none" />
                     </slider>
@@ -1538,7 +1538,7 @@
                         <bounds relativerectangle="Mix2A1Slider.left, Mix2A1Slider.bottom + 2, Mix2A1Slider.right, top + 8  " />
                         <mappingparent componentname="Mix2A1" componenttype="slider" />
                     </label>
-                    <slider name="Mix2A2" id="Mix2A2Slider" lfid="0-127Knob" popupenabled="true" encodersnap="true">
+                    <slider name="Mix2A2" id="Mix2A2Slider" lfid="0-127Knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="Mix2A1Slider.right + 8, Mix2A1Slider.top, left + Mix2A1Slider.width, top + Mix2A1Slider.height" />
                         <textbox position="none" />
                     </slider>
@@ -1546,7 +1546,7 @@
                         <bounds relativerectangle="Mix2A2Slider.left, Mix2A2Slider.bottom + 2, Mix2A2Slider.right, top + 8  " />
                         <mappingparent componentname="Mix2A2" componenttype="slider" />
                     </label>
-                    <slider name="Mix2B1" id="Mix2B1Slider" lfid="0-127Knob" popupenabled="true" encodersnap="true">
+                    <slider name="Mix2B1" id="Mix2B1Slider" lfid="0-127Knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="Mix2A2Slider.right + 8, Mix2A2Slider.top, left + Mix2A2Slider.width, top + Mix2A1Slider.height" />
                         <textbox position="none" />
                     </slider>
@@ -1554,7 +1554,7 @@
                         <bounds relativerectangle="Mix2B1Slider.left, Mix2B1Slider.bottom + 2, Mix2B1Slider.right, top + 8  " />
                         <mappingparent componentname="Mix2B1" componenttype="slider" />
                     </label>
-                    <slider name="Mix2B2" id="Mix2B2Slider" lfid="0-127Knob" popupenabled="true" encodersnap="true">
+                    <slider name="Mix2B2" id="Mix2B2Slider" lfid="0-127Knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="Mix2B1Slider.right + 8, Mix2B1Slider.top, left + Mix2B1Slider.width, top + Mix2A1Slider.height" />
                         <textbox position="none" />
                     </slider>
@@ -1562,7 +1562,7 @@
                         <bounds relativerectangle="Mix2B2Slider.left, Mix2B2Slider.bottom + 2, Mix2B2Slider.right, top + 8  " />
                         <mappingparent componentname="Mix2B2" componenttype="slider" />
                     </label>
-                    <slider name="VolMod1" id="VolMod1Slider" lfid="bipolar100knob" popupenabled="true" encodersnap="true">
+                    <slider name="VolMod1" id="VolMod1Slider" lfid="bipolar100knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="Mix2B2Slider.right + 8, Mix2B2Slider.top, left + Mix2B2Slider.width, top + Mix2A1Slider.height" />
                         <textbox position="none" />
                     </slider>
@@ -1570,7 +1570,7 @@
                         <bounds relativerectangle="VolMod1Slider.left, VolMod1Slider.bottom + 2, VolMod1Slider.right, top + 8  " />
                         <mappingparent componentname="VolMod1" componenttype="slider" />
                     </label>
-                    <slider name="VolMod2" id="VolMod2Slider" lfid="bipolar100knob" popupenabled="true" encodersnap="true">
+                    <slider name="VolMod2" id="VolMod2Slider" lfid="bipolar100knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="VolMod1Slider.right + 8, VolMod1Slider.top, left + VolMod1Slider.width, top + Mix2A1Slider.height" />
                         <textbox position="none" />
                     </slider>
@@ -1600,7 +1600,7 @@
                     <rectangle outlinethickness="2" outlinecolour="00000000" fillcolour="ffdbdbdb" cornersize="5">
                         <bounds fillparent="true" />
                     </rectangle>
-                    <slider name="Mix3A1" id="Mix3A1Slider" lfid="0-127Knob" popupenabled="true" encodersnap="true">
+                    <slider name="Mix3A1" id="Mix3A1Slider" lfid="0-127Knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="parent.left + 1, 10, left + 40, top + 45" />
                         <textbox position="none" />
                     </slider>
@@ -1608,7 +1608,7 @@
                         <bounds relativerectangle="Mix3A1Slider.left, Mix3A1Slider.bottom + 2, Mix3A1Slider.right, top + 8  " />
                         <mappingparent componentname="Mix3A1" componenttype="slider" />
                     </label>
-                    <slider name="Mix3A2" id="Mix3A2Slider" lfid="0-127Knob" popupenabled="true" encodersnap="true">
+                    <slider name="Mix3A2" id="Mix3A2Slider" lfid="0-127Knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="Mix3A1Slider.right + 8, Mix3A1Slider.top, left + Mix3A1Slider.width, top + Mix3A1Slider.height" />
                         <textbox position="none" />
                     </slider>
@@ -1616,7 +1616,7 @@
                         <bounds relativerectangle="Mix3A2Slider.left, Mix3A2Slider.bottom + 2, Mix3A2Slider.right, top + 8  " />
                         <mappingparent componentname="Mix3A2" componenttype="slider" />
                     </label>
-                    <slider name="Mix3A3" id="Mix3A3Slider" lfid="0-127Knob" popupenabled="true" encodersnap="true">
+                    <slider name="Mix3A3" id="Mix3A3Slider" lfid="0-127Knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="Mix3A2Slider.right + 8, Mix3A2Slider.top, left + Mix3A2Slider.width, top + Mix3A1Slider.height" />
                         <textbox position="none" />
                     </slider>
@@ -1624,7 +1624,7 @@
                         <bounds relativerectangle="Mix3A3Slider.left, Mix3A3Slider.bottom + 2, Mix3A3Slider.right, top + 8  " />
                         <mappingparent componentname="Mix3A3" componenttype="slider" />
                     </label>
-                    <slider name="Mix3B1" id="Mix3B1Slider" lfid="0-127Knob" popupenabled="true" encodersnap="true">
+                    <slider name="Mix3B1" id="Mix3B1Slider" lfid="0-127Knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="Mix3A3Slider.right + 8, Mix3A3Slider.top, left + Mix3A3Slider.width, top + Mix3A1Slider.height" />
                         <textbox position="none" />
                     </slider>
@@ -1632,7 +1632,7 @@
                         <bounds relativerectangle="Mix3B1Slider.left, Mix3B1Slider.bottom + 2, Mix3B1Slider.right, top + 8  " />
                         <mappingparent componentname="Mix3B1" componenttype="slider" />
                     </label>
-                    <slider name="Mix3B2" id="Mix3B2Slider" lfid="0-127Knob" popupenabled="true" encodersnap="true">
+                    <slider name="Mix3B2" id="Mix3B2Slider" lfid="0-127Knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="Mix3B1Slider.right + 8, Mix3B1Slider.top, left + Mix3B1Slider.width, top + Mix3A1Slider.height" />
                         <textbox position="none" />
                     </slider>
@@ -1640,7 +1640,7 @@
                         <bounds relativerectangle="Mix3B2Slider.left, Mix3B2Slider.bottom + 2, Mix3B2Slider.right, top + 8  " />
                         <mappingparent componentname="Mix3B2" componenttype="slider" />
                     </label>
-                    <slider name="Mix3B3" id="Mix3B3Slider" lfid="0-127Knob" popupenabled="true" encodersnap="true">
+                    <slider name="Mix3B3" id="Mix3B3Slider" lfid="0-127Knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="Mix3B2Slider.right + 8, Mix3B2Slider.top, left + Mix3B2Slider.width, top + Mix3A1Slider.height" />
                         <textbox position="none" />
                     </slider>
@@ -1664,7 +1664,7 @@
                     <rectangle outlinethickness="2" outlinecolour="00000000" fillcolour="ffdbdbdb" cornersize="5">
                         <bounds fillparent="true" />
                     </rectangle>
-                    <slider name="Pan1" id="Pan1Slider" lfid="bipolar100knob" popupenabled="true" encodersnap="true">
+                    <slider name="Pan1" id="Pan1Slider" lfid="bipolar100knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="parent.left + 1, 10, left + 40, top + 45" />
                         <textbox position="none" />
                     </slider>
@@ -1672,7 +1672,7 @@
                         <bounds relativerectangle="Pan1Slider.left, Pan1Slider.bottom + 2, Pan1Slider.right, top + 8  " />
                         <mappingparent componentname="Pan1" componenttype="slider" />
                     </label>
-                    <slider name="Pan1Mod" id="Pan1ModSlider" lfid="bipolar100knob" popupenabled="true" encodersnap="true">
+                    <slider name="Pan1Mod" id="Pan1ModSlider" lfid="bipolar100knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="Pan1Slider.right + 8, Pan1Slider.top, left + Pan1Slider.width, top + Pan1Slider.height" />
                         <textbox position="none" />
                     </slider>
@@ -1680,7 +1680,7 @@
                         <bounds relativerectangle="Pan1ModSlider.left, Pan1ModSlider.bottom + 2, Pan1ModSlider.right, top + 8  " />
                         <mappingparent componentname="Pan1Mod" componenttype="slider" />
                     </label>
-                    <slider name="MGain1" id="MGain1Slider" lfid="0-127Knob" popupenabled="true" encodersnap="true">
+                    <slider name="MGain1" id="MGain1Slider" lfid="0-127Knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="Pan1ModSlider.right + 8, Pan1ModSlider.top, left + Pan1ModSlider.width, top + Pan1Slider.height" />
                         <textbox position="none" />
                     </slider>
@@ -1688,7 +1688,7 @@
                         <bounds relativerectangle="MGain1Slider.left, MGain1Slider.bottom + 2, MGain1Slider.right, top + 8  " />
                         <mappingparent componentname="MGain1" componenttype="slider" />
                     </label>
-                    <slider name="Pan2" id="Pan2Slider" lfid="bipolar100knob" popupenabled="true" encodersnap="true">
+                    <slider name="Pan2" id="Pan2Slider" lfid="bipolar100knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="MGain1Slider.right + 8, MGain1Slider.top, left + MGain1Slider.width, top + Pan1Slider.height" />
                         <textbox position="none" />
                     </slider>
@@ -1696,7 +1696,7 @@
                         <bounds relativerectangle="Pan2Slider.left, Pan2Slider.bottom + 2, Pan2Slider.right, top + 8  " />
                         <mappingparent componentname="Pan2" componenttype="slider" />
                     </label>
-                    <slider name="Pan2Mod" id="Pan2ModSlider" lfid="bipolar100knob" popupenabled="true" encodersnap="true">
+                    <slider name="Pan2Mod" id="Pan2ModSlider" lfid="bipolar100knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="Pan2Slider.right + 8, Pan2Slider.top, left + Pan2Slider.width, top + Pan1Slider.height" />
                         <textbox position="none" />
                     </slider>
@@ -1704,7 +1704,7 @@
                         <bounds relativerectangle="Pan2ModSlider.left, Pan2ModSlider.bottom + 2, Pan2ModSlider.right, top + 8  " />
                         <mappingparent componentname="Pan2Mod" componenttype="slider" />
                     </label>
-                    <slider name="MGain2" id="MGain2Slider" lfid="0-127Knob" popupenabled="true" encodersnap="true">
+                    <slider name="MGain2" id="MGain2Slider" lfid="0-127Knob" popupenabled="false" encodersnap="true">
                         <bounds relativerectangle="Pan2ModSlider.right + 8, Pan2ModSlider.top, left + Pan2ModSlider.width, top + Pan1Slider.height" />
                         <textbox position="none" />
                     </slider>
@@ -1759,7 +1759,7 @@
             </component>
             <!--Fader Matrix-->
             <component backgroundimage="Matrix624x418newMatrixC.png" name="Matrix" id="matrix" showcrosshair="true" verticalcrosshaircolour="3300ff00" verticalcrosshairthickness="12" horizontalcrosshaircolour="330000ff" horizontalcrosshairthickness="12">
-                <bounds x="313" y="200" height="418" width="624" />
+                <bounds x="313" y="218" height="418" width="624" />
                 <!--Fader Matrix 1-12-->
                 <slider id="MatrixSlider1" name="MatrixSlider1" wtid="matrixfader">
                     <bounds relativerectangle="0, 0, left + parent.width/52, parent.height" />
@@ -1921,16 +1921,16 @@
                 </slider>
             </component>
             <component backgroundimage="TextY_Backgr.png" name="MatrixYTextBackgr" id="matrixYTextBackgr">
-                <bounds x="248" y="195" height="428" width="63" />
+                <bounds x="248" y="213" height="428" width="63" />
             </component>
             <component backgroundimage="TextY_MatrixSources_63x418.png" name="MatrixYText" id="matrixYText">
-                <bounds x="250" y="200" height="418" width="63" />
+                <bounds x="250" y="218" height="418" width="63" />
             </component>
             <component backgroundimage="TextX_Backgr.png" name="MatrixXTextBackgr" id="matrixXTextBackgr">
-                <bounds x="312" y="120" height="76" width="640" />
+                <bounds x="312" y="138" height="76" width="640" />
             </component>
             <component backgroundimage="TextX_Matrix_Destinations640x76.png" name="MatrixXText" id="matrixXText">
-                <bounds x="312" y="120" height="76" width="640" />
+                <bounds x="312" y="138" height="76" width="640" />
             </component>
         </component>
     </layout>

@@ -175,6 +175,16 @@
               file="../Assets/40x40CMS_SeqDiv.png"/>
         <FILE id="nz1JQY" name="40x40CMS_White2Darkfade+.png" compile="0" resource="1"
               file="../Assets/40x40CMS_White2Darkfade+.png"/>
+        <FILE id="S5sxUn" name="40x40CMS_WhiteAtt.png" compile="0" resource="1"
+              file="../Assets/40x40CMS_WhiteAtt.png"/>
+        <FILE id="F8qC6r" name="40x40CMS_WhiteBPM.png" compile="0" resource="1"
+              file="../Assets/40x40CMS_WhiteBPM.png"/>
+        <FILE id="Cg2uHK" name="40x40CMS_WhiteCf.png" compile="0" resource="1"
+              file="../Assets/40x40CMS_WhiteCf.png"/>
+        <FILE id="c2zRXj" name="40x40CMS_WhiteDec.png" compile="0" resource="1"
+              file="../Assets/40x40CMS_WhiteDec.png"/>
+        <FILE id="ki3mw7" name="40x40CMS_WhiteRel.png" compile="0" resource="1"
+              file="../Assets/40x40CMS_WhiteRel.png"/>
         <FILE id="l9QZfI" name="40x40CMSwhite.png" compile="0" resource="1"
               file="../Assets/40x40CMSwhite.png"/>
         <FILE id="VDoI5j" name="40x40CMTempo.png" compile="0" resource="1"
@@ -190,8 +200,8 @@
         <FILE id="icyPKr" name="CMS-1.configuration" compile="0" resource="1"
               file="../Assets/CMS-1.configuration"/>
         <FILE id="ezv58P" name="CMS-1.layout" compile="0" resource="1" file="../Assets/CMS-1.layout"/>
-        <FILE id="R5V00n" name="CWMbackgrDark.png" compile="0" resource="1"
-              file="../Assets/CWMbackgrDark.png"/>
+        <FILE id="bwuOtw" name="CWMbackgrBlack.png" compile="0" resource="1"
+              file="../Assets/CWMbackgrBlack.png"/>
         <FILE id="eY5cmr" name="LfoWaveKnob.png" compile="0" resource="1" file="../Assets/LfoWaveKnob.png"/>
         <FILE id="CpjJx3" name="line_1x63.png" compile="0" resource="1" file="../Assets/line_1x63.png"/>
         <FILE id="ok8U5m" name="Matrix624x418newMatrixC.png" compile="0" resource="1"
