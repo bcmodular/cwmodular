@@ -386,7 +386,7 @@
     </GROUP>
   </MAINGROUP>
   <EXPORTFORMATS>
-    <VS2017 targetFolder="Builds/VisualStudio2017" extraDefs="_XKEYCHECK_H&#10;JUCE_NO_COMPILER_THREAD_LOCAL=1&#10;_CRT_SECURE_NO_DEPRECATE&#10;SCOPE_MODULE_NAME=&quot;CMS-1\ 1.0.1&quot;&#10;LOADER_CONFIGURATION=&quot;CMS-1.configuration&quot;&#10;LOADER_LAYOUT=&quot;CMS-1.layout&quot;&#10;DEVICE_UID=90001"
+    <VS2017 targetFolder="Builds/VisualStudio2017" extraDefs="_XKEYCHECK_H&#10;JUCE_NO_COMPILER_THREAD_LOCAL=1&#10;_CRT_SECURE_NO_DEPRECATE&#10;SCOPE_MODULE_NAME=&quot;CMS-1\ 1.0.1&quot;&#10;LOADER_CONFIGURATION=&quot;CMS-1.configuration&quot;&#10;LOADER_LAYOUT=&quot;CMS-1.layout&quot;"
             extraLinkerFlags="/SAFESEH:NO" externalLibraries="${SCOPELIB};legacy_stdio_definitions.lib">
       <CONFIGURATIONS>
         <CONFIGURATION isDebug="1" name="Debug" targetName="CMS-1-Debug_1_0_1" defines="__DLL_EFFECT__&#10;SCOPELIB=ScopeDLLd.lib"
