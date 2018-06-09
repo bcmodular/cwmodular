@@ -81,7 +81,7 @@ build_script:
 artifacts:
   - path: $(APPVEYOR_BUILD_VERSION).zip
     name: setup
-  - path: c:\JUCE\extras\Projucer\Builds\VisualStudio2017\x64\Debug\App\Projucer.exe
+  - path: ..\JUCE\extras\Projucer\Builds\VisualStudio2017\x64\Debug\App\Projucer.exe
 
 #deploy:
 #  provider: S3
