@@ -12,8 +12,9 @@
               companyWebsite="http://cwmodular.org/" companyEmail="support@scopesync.co.uk"
               pluginIsMidiEffectPlugin="0" reportAppUsage="0" displaySplashScreen="0"
               buildVST3="1" buildStandalone="1" pluginFormats="buildVST,buildVST3,buildAU,buildStandalone"
-              pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn,pluginProducesMidiOut,pluginEditorRequiresKeys"
-              buildAUv3="0" enableIAA="0">
+              pluginCharacteristicsValue="pluginEditorRequiresKeys,pluginIsSynth,pluginProducesMidiOut,pluginWantsMidiIn"
+              buildAUv3="0" enableIAA="0" pluginRTASDisableBypass="0" pluginRTASDisableMultiMono="0"
+              pluginAAXDisableBypass="0" pluginAAXDisableMultiMono="0">
   <MAINGROUP id="zkEMvA" name="CMS-1">
     <GROUP id="{697F9A75-3D66-E01A-0E48-E2526D10C18B}" name="Comms">
       <FILE id="cm9H20" name="OSCServer.cpp" compile="1" resource="0" file="../../../scopesync-shared/Comms/OSCServer.cpp"/>
