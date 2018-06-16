@@ -342,7 +342,7 @@
             </slider>
         </widgettemplates>
         <!--Main Component-->
-        <component backgroundimage="CWMbackgrBlack.png" backgroundcolour="ffffffff" lfid="maintheme">
+        <component backgroundcolour="ff000000" lfid="maintheme">
             <backgroundimageplacement>ytop</backgroundimageplacement>
             <bounds height="746" width="1280" />
             <!--ScopeSync Header-->
@@ -390,7 +390,7 @@
                     </textbox>
                 </slider>
                 <label name="deviceinstance" id="deviceinstancelabel" text="Device Instance" lfid="headercontrols" displaycontext="host">
-                    <bounds relativerectangle="right - 160, snapshot.top, snapshot.left - 5, snapshot.bottom" />
+                    <bounds relativerectangle="right - 180, snapshot.top, snapshot.left - 5, snapshot.bottom" />
                     <font bold="true" height="14" />
                     <justification left="true" />
                 </label>
@@ -414,6 +414,30 @@
                 <textbutton name="MIDI Activity" id="midiactbutton" lfid="midilight" displaycontext="scope" tooltip="MIDI Activity">
                     <bounds relativerectangle="right - 10, midichannellabel.top + (midichannellabel.height / 2) - 5, deviceinstancelabel.left - 10, top + 10" />
                 </textbutton>
+                <label name="PWR" id="PWRLabel" text="PitchWheel Range" lfid="headercontrols" parametertextdisplay="fulldescription" displaycontext="scope">
+                    <bounds relativerectangle="right - 180, snapshot.top, midichannellabel.left - 5, snapshot.bottom" />
+                    <font bold="true" height="14" />
+                    <justification left="true" />
+                    <mappingparent componentname="PWR" componenttype="slider"/>
+                </label>
+                <slider name="PWR" id="PWRSlider" style="linearbar" nostyleoverride="true" lfid="headercontrols" displaycontext="scope">
+                    <bounds relativerectangle="right - 46, snapshot.top, midichannellabel.left - 5, snapshot.bottom" />
+                    <textbox position="above" readonly="false">
+                        <font height="14" bold="true" />
+                    </textbox>
+                </slider>
+                <label name="PWR" id="PWRLabel" text="PitchWheel Range" lfid="headercontrols" parametertextdisplay="fulldescription" displaycontext="host">
+                    <bounds relativerectangle="right - 180, snapshot.top, deviceinstancelabel.left - 5, snapshot.bottom" />
+                    <font bold="true" height="14" />
+                    <justification left="true" />
+                    <mappingparent componentname="PWR" componenttype="slider"/>
+                </label>
+                <slider name="PWR" id="PWRSlider" style="linearbar" nostyleoverride="true" lfid="headercontrols" displaycontext="host">
+                    <bounds relativerectangle="right - 46, snapshot.top, deviceinstancelabel.left - 5, snapshot.bottom" />
+                    <textbox position="above" readonly="false">
+                        <font height="14" bold="true" />
+                    </textbox>
+                </slider>
             </component>
             <!--First row of controls-->
             <component backgroundcolour="00ff0000" name="First Row" id="firstrow">

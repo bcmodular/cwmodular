@@ -12,7 +12,7 @@
               companyWebsite="http://cwmodular.org/" companyEmail="support@scopesync.co.uk"
               pluginIsMidiEffectPlugin="0" reportAppUsage="0" displaySplashScreen="0"
               buildVST3="1" buildStandalone="1" pluginFormats="buildVST,buildVST3,buildAU,buildStandalone"
-              pluginCharacteristicsValue="pluginEditorRequiresKeys,pluginIsSynth,pluginProducesMidiOut,pluginWantsMidiIn"
+              pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn,pluginProducesMidiOut,pluginEditorRequiresKeys"
               buildAUv3="0" enableIAA="0" pluginRTASDisableBypass="0" pluginRTASDisableMultiMono="0"
               pluginAAXDisableBypass="0" pluginAAXDisableMultiMono="0">
   <MAINGROUP id="zkEMvA" name="CMS-1">
