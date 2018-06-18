@@ -62,10 +62,9 @@ before_build:
 after_build:
   - cmd: set PATH=%PATH%;"C:\\Program Files (x86)\\Inno Setup 5"  
   - cmd: cd "c:\cwmodular\Setup Script"
-  - cmd: iscc CWModular.iss
+  - cmd: iscc CMS-1.iss
   - cmd: cd Output
-  - cmd: mv mysetup.exe setup.exe
-  - cmd: 7z a %APPVEYOR_BUILD_VERSION%.zip setup.exe
+  - cmd: 7z a %APPVEYOR_BUILD_VERSION%.zip CMS-1.exe
   - cmd: mv %APPVEYOR_BUILD_VERSION%.zip ..\..
   - cmd: mv c:\JUCE\extras\Projucer\Builds\VisualStudio2017\x64\Debug\App\Projucer.exe ..\..
 

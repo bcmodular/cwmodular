@@ -3,8 +3,8 @@
 ; architectures (x86 and x64) using a single installer.
 
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING .ISS SCRIPT FILES!
-#define AppName "CWModular"
-#define RegSubKey "Software\CWModular"
+#define AppName "CMS-1"
+#define RegSubKey "Software\CWModular\CMS-1"
 
 [Setup]
 AppName={#AppName}
@@ -20,7 +20,9 @@ AppSupportURL=http://bcmodular.co.uk/forum/
 AppUpdatesURL=http://cwmodular.org/
 Compression=lzma2
 SolidCompression=yes
-LicenseFile=license.txt
+LicenseFile=cms-1-license.txt
+InfoAfterFile=cms-1-infoafter.rtf
+OutputBaseFilename=CMS-1
 ; "ArchitecturesInstallIn64BitMode=x64" requests that the install be
 ; done in "64-bit mode" on x64, meaning it should use the native
 ; 64-bit Program Files directory and the 64-bit view of the registry.
@@ -30,61 +32,63 @@ ArchitecturesInstallIn64BitMode=x64
 ; installation to run on all architectures (including Itanium,
 ; since it's capable of running 32-bit code too).
 
-[Types]
-Name: "typical"; Description: "Typical installation"
-Name: "full"; Description: "Full installation"
-Name: "compact"; Description: "Compact installation"
-Name: "custom"; Description: "Custom installation"; Flags: iscustom
+;[Types]
+;Name: "typical"; Description: "Typical installation"
+;Name: "full"; Description: "Full installation"
+;Name: "custom"; Description: "Custom installation"; Flags: iscustom
 
 [Files]
 ; Install MyProg-x64.exe if running in 64-bit mode (x64; see above),
 ; MyProg.exe otherwise.
 ; Place all x64 files here
-Source: "..\Plugins\Windows\VST2\64bit\*"; DestDir: "{code:GetVST2Dir}\{#AppName}"; Flags: ignoreversion; Check: Is64BitInstallMode; Components:VSTPlugin\64VST2
-Source: "..\Plugins\Windows\VST3\64bit\*"; DestDir: "{cf}\VST3\{#AppName}"; Flags: ignoreversion; Check: Is64BitInstallMode; Components:VSTPlugin\64VST3
+;Source: "..\Plugins\Windows\VST2\64bit\*"; DestDir: "{code:GetVST2Dir}\{#AppName}"; Flags: ignoreversion; Check: Is64BitInstallMode; Components:VSTPlugin\64VST2
+;Source: "..\Plugins\Windows\VST3\64bit\*"; DestDir: "{cf}\VST3\{#AppName}"; Flags: ignoreversion; Check: Is64BitInstallMode; Components:VSTPlugin\64VST3
 ; Place all x86 files here, first one should be marked 'solidbreak'
 ; Place all common files here, first one should be marked 'solidbreak'
-Source: "..\Scope DLL\*"; DestDir: "{code:GetScopeDir}\App\Dll"; Flags: ignoreversion solidbreak; Components: ScopeDLL
-;Source: "..\BC Modular Modules\*"; DestDir: "{code:GetModularDir}"; Flags: ignoreversion; Components: BCMod
-Source: "..\Plugins\Windows\VST2\32bit\*"; DestDir: "{code:GetVST2Dir}\{#AppName}"; Flags: ignoreversion; Components:VSTPlugin\32VST2
-Source: "..\Plugins\Windows\VST3\32bit\*"; DestDir: "{cf32}\{#AppName}"; Flags: ignoreversion; Components:VSTPlugin\32VST3
-;Source: "..\Configurations\*"; DestDir: "{app}\Configurations"; Flags: ignoreversion recursesubdirs; Components: Configurations
-;Source: "..\Layouts\*"; DestDir: "{app}\Layouts"; Flags: ignoreversion recursesubdirs; Components: Layouts
-;Source: "..\Presets\*"; DestDir: "{app}\Presets"; Flags: ignoreversion recursesubdirs; Components: Presets
-;Source: "..\Tutorials\*"; DestDir: "{app}\Tutorials"; Flags: ignoreversion recursesubdirs; Components: Tutorials
+;Source: "..\Scope DLL\*"; DestDir: "{code:GetScopeDir}\App\Dll"; Flags: ignoreversion solidbreak; Components: ScopeDLL
+;Source: "..\CMS-1\ScopeDevice\CMS-1.dev"; DestDir: "{code:GetDeviceDir}"; Flags: ignoreversion; Components: ScopeDevice
+;Source: "..\CMS-1\ScopeDevice\CMS-1.pre"; DestDir: "{code:GetPresetsDir}"; Flags: ignoreversion; Components: ScopePresets
+;Source: "..\Plugins\Windows\VST2\32bit\*"; DestDir: "{code:GetVST2Dir}\{#AppName}"; Flags: ignoreversion; Components:VSTPlugin\32VST2
+;Source: "..\Plugins\Windows\VST3\32bit\*"; DestDir: "{cf32}\{#AppName}"; Flags: ignoreversion; Components:VSTPlugin\32VST3
+;Source: "..\MS\VC_redist.x86.exe"; DestDir: {tmp}; Flags: deleteafterinstall
+;Source: "..\MS\VC_redist.x64.exe"; DestDir: {tmp}; Flags: deleteafterinstall
+Source: "..\Plugins\Windows\VST2\64bit\*"; DestDir: "{code:GetVST2Dir}\{#AppName}"; Flags: ignoreversion; Check: Is64BitInstallMode;
+Source: "..\Plugins\Windows\VST3\64bit\*"; DestDir: "{cf}\VST3\{#AppName}"; Flags: ignoreversion; Check: Is64BitInstallMode;
+; Place all x86 files here, first one should be marked 'solidbreak'
+; Place all common files here, first one should be marked 'solidbreak'
+Source: "..\Scope DLL\*"; DestDir: "{code:GetScopeDir}\App\Dll"; Flags: ignoreversion solidbreak;
+Source: "..\CMS-1\ScopeDevice\CMS-1.dev"; DestDir: "{code:GetDeviceDir}"; Flags: ignoreversion;
+Source: "..\CMS-1\ScopeDevice\CMS-1.pre"; DestDir: "{code:GetPresetsDir}"; Flags: ignoreversion;
+Source: "..\Plugins\Windows\VST2\32bit\*"; DestDir: "{code:GetVST2Dir}\{#AppName}"; Flags: ignoreversion;
+Source: "..\Plugins\Windows\VST3\32bit\*"; DestDir: "{cf32}\{#AppName}"; Flags: ignoreversion;
 Source: "..\MS\VC_redist.x86.exe"; DestDir: {tmp}; Flags: deleteafterinstall
 Source: "..\MS\VC_redist.x64.exe"; DestDir: {tmp}; Flags: deleteafterinstall
 
 [Icons]
 Name: "{group}\Uninstall {#AppName}"; Filename: "{uninstallexe}"
 
-[Components]
-Name: "ScopeDLL"; Description: "Scope Module"; Types: full typical compact
-;Name: "BCMod"; Description: "BC Modular Modules"; Types: full typical compact
-;Name: "Configurations"; Description: "Configuration Library"; Types: full typical compact
-;Name: "Layouts"; Description: "Layout Library"; Types: full typical compact
-;Name: "Presets"; Description: "Preset Library"; Types: full typical compact
-;Name: "Tutorials"; Description: "Tutorials"; Types: full typical
-Name: "VSTPlugin"; Description: "VST Plugins"; Types: full typical compact
-Name: "VSTPlugin\32VST2"; Description: "32-bit VST2 Plugin"; Types: full typical compact
-Name: "VSTPlugin\64VST2"; Description: "64-bit VST2 Plugin"; Types: full typical compact; Check: Is64BitInstallMode
-Name: "VSTPlugin\32VST3"; Description: "32-bit VST3 Plugin (Experimental)"
-Name: "VSTPlugin\64VST3"; Description: "64-bit VST3 Plugin (Experimental)"; Check: Is64BitInstallMode
+;[Components]
+;Name: "ScopeDLL"; Description: "CMS-1 ScopeSync Module"; Types: full typical
+;Name: "ScopeDevice"; Description: "Scope Device"; Types: full typical
+;Name: "ScopePresets"; Description: "Scope Presets"; Types: full typical
+;Name: "VSTPlugin"; Description: "VST Plugins"; Types: full typical compact
+;Name: "VSTPlugin\32VST2"; Description: "32-bit VST2 Plugin"; Types: full typical compact
+;Name: "VSTPlugin\64VST2"; Description: "64-bit VST2 Plugin"; Types: full typical compact; Check: Is64BitInstallMode
+;Name: "VSTPlugin\32VST3"; Description: "32-bit VST3 Plugin (Experimental)"
+;Name: "VSTPlugin\64VST3"; Description: "64-bit VST3 Plugin (Experimental)"; Check: Is64BitInstallMode
 
 [Run]
 Filename: "{tmp}\VC_redist.x64.exe"; Parameters: "/install /passive /norestart"; Check: Is64BitInstallMode; StatusMsg: Installing 2017 RunTime...
 Filename: "{tmp}\VC_redist.x86.exe"; Parameters: "/install /passive /norestart"; Check: "not Is64BitInstallMode"; StatusMsg: Installing 2017 RunTime...
 
 [Registry]
-Root: HKCU; Subkey: "Software\CWModular"; ValueType: string; ValueName: "InstallLocation"; ValueData: "{app}"
+Root: HKCU; Subkey: "Software\CWModular\CMS1"; ValueType: string; ValueName: "InstallLocation"; ValueData: "{app}"
 
 [Code]
 // global vars
 var
   ScopeDirPage1: TInputDirWizardPage;
   ScopeDirPage1ID: Integer;
-//  ScopeDirPage2: TInputDirWizardPage;
-//  ScopeDirPage2ID: Integer;
   AdditionalDirPage1: TInputDirWizardPage;
   AdditionalDirPage1ID: Integer;
 
@@ -96,6 +100,26 @@ begin
   RegWriteStringValue(HKEY_CURRENT_USER, '{#RegSubKey}', 'ScopeDir', ScopeDir);
   { Return the selected ScopeDir }
   Result := ScopeDir;
+end;
+
+function GetDeviceDir(Param: String): String;
+var
+  DeviceDir: String;
+begin
+  DeviceDir := ScopeDirPage1.Values[1];
+  RegWriteStringValue(HKEY_CURRENT_USER, '{#RegSubKey}', 'DeviceDir', DeviceDir);
+  { Return the selected DeviceDir }
+  Result := DeviceDir;
+end;
+
+function GetPresetsDir(Param: String): String;
+var
+  PresetsDir: String;
+begin
+  PresetsDir := ScopeDirPage1.Values[2];
+  RegWriteStringValue(HKEY_CURRENT_USER, '{#RegSubKey}', 'PresetsDir', PresetsDir);
+  { Return the selected PresetsDir }
+  Result := PresetsDir;
 end;
 
 function GetVST2Dir(Param: String): String;
@@ -112,7 +136,8 @@ procedure InitializeWizard;
 var
   VST2Dir: String;
   ScopeDir: String;
-//  ModularDir: String;
+  DeviceDir: String;
+  PresetsDir: String;
   VST3Text: String;
 begin
   if not(RegQueryStringValue(HKEY_CURRENT_USER, '{#RegSubKey}', 'VST2Dir', VST2Dir)) then
@@ -125,36 +150,36 @@ begin
     ScopeDir := ExpandConstant('{pf}\Scope PCI');
   end; 
 
-//  if not(RegQueryStringValue(HKEY_CURRENT_USER, '{#RegSubKey}', 'ModularDir', ModularDir)) then
-//  begin
-//    ModularDir := ExpandConstant('{pf}\Scope PCI\Modular Modules\ScopeSync');
-//  end; 
+  if not(RegQueryStringValue(HKEY_CURRENT_USER, '{#RegSubKey}', 'DeviceDir', DeviceDir)) then
+  begin
+    DeviceDir := ExpandConstant('{pf}\Scope PCI\Devices\ScopeSync\CWModular');
+  end; 
+
+  if not(RegQueryStringValue(HKEY_CURRENT_USER, '{#RegSubKey}', 'PresetsDir', PresetsDir)) then
+  begin
+    PresetsDir := ExpandConstant('{pf}\Scope PCI\Presets');
+  end; 
 
   ScopeDirPage1 := CreateInputDirPage(
     wpSelectComponents,
-    'Select Scope Directory',
+    'Select Scope Directories',
     'Where should Scope files be installed?',
     '',
     False,
     '{#AppName}'
   );
   ScopeDirPage1.Add('Scope Installation Directory');
-  ScopeDirPage1ID := ScopeDirPage1.ID;
   ScopeDirPage1.Values[0] := ScopeDir;
+
+  ScopeDirPage1.Add('Scope Device Directory');
+  ScopeDirPage1.Values[1] := DeviceDir;  
+
+  ScopeDirPage1.Add('Scope Presets Directory');
+  ScopeDirPage1.Values[2] := PresetsDir;  
+
+  ScopeDirPage1ID := ScopeDirPage1.ID;
   
-//  ScopeDirPage2 := CreateInputDirPage(
-//    ScopeDirPage1ID,
-//    'Select Scope Modular Modules Directory',
-//    'Where should Scope Modular Modules be installed?',
-//    '',
-//    False,
-//    '{#AppName}'
-//  );
-//  ScopeDirPage2.Add('Scope Modular Modules Directory');
-//  ScopeDirPage2ID := ScopeDirPage2.ID;
-//  ScopeDirPage2.Values[0] := ModularDir;
-  
-VST3Text := 'N.B. If selected, VST3 files will be installed in the standard locations, e.g. ' + ExpandConstant('{cf}\VST3\');
+  VST3Text := 'N.B. VST3 files will be installed in the standard locations, e.g. ' + ExpandConstant('{cf}\VST3\');
   
   AdditionalDirPage1 := CreateInputDirPage(
     ScopeDirPage1ID,
@@ -170,18 +195,18 @@ VST3Text := 'N.B. If selected, VST3 files will be installed in the standard loca
 
 end;
 
-function ShouldSkipPage(PageID: Integer): Boolean;
-begin
+//function ShouldSkipPage(PageID: Integer): Boolean;
+//begin
   // initialize result to not skip any page (not necessary, but safer)
-  Result := False;
+//  Result := False;
   // if the page that is asked to be skipped is your custom page, then...
-  if PageID = ScopeDirPage1ID then
-    Result := not IsComponentSelected('ScopeDLL')
+//  if PageID = ScopeDirPage1ID then
+//    Result := not IsComponentSelected('ScopeDLL')
 //  else if PageID = ScopeDirPage2ID then
 //    Result := not IsComponentSelected('BCMod')
-  else if PageID = AdditionalDirPage1ID then
-    Result := not (IsComponentSelected('VSTPlugin\32VST2') or IsComponentSelected('VSTPlugin\64VST2'));
-end;
+//  else if PageID = AdditionalDirPage1ID then
+//    Result := not (IsComponentSelected('VSTPlugin\32VST2') or IsComponentSelected('VSTPlugin\64VST2'));
+//end;
 
 procedure DecodeVersion (verstr: String; var verint: array of Integer);
 var
