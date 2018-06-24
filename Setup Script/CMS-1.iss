@@ -60,7 +60,7 @@ Source: "..\Scope DLL\*"; DestDir: "{code:GetScopeDir}\App\Dll"; Flags: ignoreve
 Source: "..\CMS-1\ScopeDevice\CMS-1.dev"; DestDir: "{code:GetDeviceDir}"; Flags: ignoreversion;
 Source: "..\CMS-1\ScopeDevice\CMS-1.pre"; DestDir: "{code:GetPresetsDir}"; Flags: ignoreversion uninsneveruninstall confirmoverwrite;
 Source: "..\Plugins\Windows\VST2\32bit\*"; DestDir: "{code:GetVST2Dir}\{#AppName}"; Flags: ignoreversion;
-Source: "..\Plugins\Windows\VST3\32bit\*"; DestDir: "{cf32}\{#AppName}"; Flags: ignoreversion;
+Source: "..\Plugins\Windows\VST3\32bit\*"; DestDir: "{cf32}\VST3\{#AppName}"; Flags: ignoreversion;
 Source: "..\MS\VC_redist.x86.exe"; DestDir: {tmp}; Flags: deleteafterinstall
 Source: "..\MS\VC_redist.x64.exe"; DestDir: {tmp}; Flags: deleteafterinstall
 
