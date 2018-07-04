@@ -12,7 +12,7 @@
               companyWebsite="http://cwmodular.org/" companyEmail="support@scopesync.co.uk"
               pluginIsMidiEffectPlugin="0" reportAppUsage="0" displaySplashScreen="0"
               buildVST3="1" buildStandalone="1" pluginFormats="buildVST,buildVST3,buildAU,buildStandalone"
-              pluginCharacteristicsValue="pluginEditorRequiresKeys,pluginProducesMidiOut,pluginWantsMidiIn"
+              pluginCharacteristicsValue="pluginWantsMidiIn,pluginProducesMidiOut,pluginEditorRequiresKeys"
               buildAUv3="0" enableIAA="0" pluginRTASDisableBypass="0" pluginRTASDisableMultiMono="0"
               pluginAAXDisableBypass="0" pluginAAXDisableMultiMono="0">
   <MAINGROUP id="zkEMvA" name="CMS-1">
@@ -211,12 +211,10 @@
       <FILE id="FWXIGf" name="CMS-1.configuration" compile="0" resource="1"
             file="../Assets/CMS-1.configuration"/>
       <FILE id="DZcMUR" name="CMS-1.layout" compile="0" resource="1" file="../Assets/CMS-1.layout"/>
-      <FILE id="s6TlJ6" name="CWMbackgrBlack.png" compile="0" resource="1"
-            file="../Assets/CWMbackgrBlack.png"/>
       <FILE id="T5zJ3U" name="LfoWaveKnob.png" compile="0" resource="1" file="../Assets/LfoWaveKnob.png"/>
       <FILE id="Pm1RnF" name="line_1x63.png" compile="0" resource="1" file="../Assets/line_1x63.png"/>
-      <FILE id="hOV8lf" name="Matrix624x418newMatrixC.png" compile="0" resource="1"
-            file="../Assets/Matrix624x418newMatrixC.png"/>
+      <FILE id="kW3tVl" name="Matrix676x442_0.png" compile="0" resource="1"
+            file="../Assets/Matrix676x442_0.png"/>
       <FILE id="bR2Phg" name="MidiActivity-Off.png" compile="0" resource="1"
             file="../Assets/MidiActivity-Off.png"/>
       <FILE id="MXQHEW" name="MidiActivity-On.png" compile="0" resource="1"
@@ -285,22 +283,16 @@
             file="../Assets/ModuleHeaderVelo_50x14.png"/>
       <FILE id="NANIaA" name="ModuleHeaderVolM_50x14.png" compile="0" resource="1"
             file="../Assets/ModuleHeaderVolM_50x14.png"/>
-      <FILE id="O3Vtv5" name="slider-background.png" compile="0" resource="1"
-            file="../Assets/slider-background.png"/>
       <FILE id="hnDrHL" name="Slider-Thumb.png" compile="0" resource="1"
             file="../Assets/Slider-Thumb.png"/>
       <FILE id="wtpEFz" name="Slider-ThumbBlTu.png" compile="0" resource="1"
             file="../Assets/Slider-ThumbBlTu.png"/>
       <FILE id="tmVfSn" name="Slider-ThumbBlWh.png" compile="0" resource="1"
             file="../Assets/Slider-ThumbBlWh.png"/>
-      <FILE id="bLXjin" name="TextX_Backgr.png" compile="0" resource="1"
-            file="../Assets/TextX_Backgr.png"/>
-      <FILE id="FnXef3" name="TextX_Matrix_Destinations640x76.png" compile="0"
-            resource="1" file="../Assets/TextX_Matrix_Destinations640x76.png"/>
-      <FILE id="UmTweD" name="TextY_Backgr.png" compile="0" resource="1"
-            file="../Assets/TextY_Backgr.png"/>
-      <FILE id="SlA6GA" name="TextY_MatrixSources_63x418.png" compile="0"
-            resource="1" file="../Assets/TextY_MatrixSources_63x418.png"/>
+      <FILE id="yPcWnJ" name="TextX_Matrix_Destinations693x82-White.png"
+            compile="0" resource="1" file="../Assets/TextX_Matrix_Destinations693x82-White.png"/>
+      <FILE id="lXAxXq" name="TextY_MatrixSources_66x442-White.png" compile="0"
+            resource="1" file="../Assets/TextY_MatrixSources_66x442-White.png"/>
       <FILE id="ZCNIsA" name="ToggleSw0.png" compile="0" resource="1" file="../Assets/ToggleSw0.png"/>
       <FILE id="QH0Ku2" name="ToggleSw1.png" compile="0" resource="1" file="../Assets/ToggleSw1.png"/>
       <FILE id="mGqrHb" name="VUmeter.png" compile="0" resource="1" file="../Assets/VUmeter.png"/>
