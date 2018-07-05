@@ -1782,179 +1782,183 @@
                 </component>
             </component>
             <!--Fader Matrix-->
-            <component backgroundimage="Matrix624x418newMatrixC.png" name="Matrix" id="matrix" showcrosshair="true" verticalcrosshaircolour="3300ff00" verticalcrosshairthickness="12" horizontalcrosshaircolour="330000ff" horizontalcrosshairthickness="12">
-                <bounds x="313" y="218" height="418" width="624" />
-                <!--Fader Matrix 1-12-->
-                <slider id="MatrixSlider1" name="MatrixSlider1" wtid="matrixfader">
-                    <bounds relativerectangle="0, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider2" name="MatrixSlider2" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider1.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider3" name="MatrixSlider3" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider2.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider4" name="MatrixSlider4" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider3.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider5" name="MatrixSlider5" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider4.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider6" name="MatrixSlider6" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider5.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider7" name="MatrixSlider7" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider6.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider8" name="MatrixSlider8" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider7.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider9" name="MatrixSlider9" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider8.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider10" name="MatrixSlider10" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider9.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider11" name="MatrixSlider11" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider10.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider12" name="MatrixSlider12" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider11.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <!--Fader Matrix 13-24-->
-                <slider id="MatrixSlider13" name="MatrixSlider13" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider12.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider14" name="MatrixSlider14" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider13.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider15" name="MatrixSlider15" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider14.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider16" name="MatrixSlider16" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider15.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider17" name="MatrixSlider17" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider16.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider18" name="MatrixSlider18" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider17.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider19" name="MatrixSlider19" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider18.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider20" name="MatrixSlider20" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider19.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider21" name="MatrixSlider21" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider20.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider22" name="MatrixSlider22" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider21.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider23" name="MatrixSlider23" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider22.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider24" name="MatrixSlider24" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider23.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <!--Fader Matrix 25-remain -->
-                <slider id="MatrixSlider25" name="MatrixSlider25" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider24.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider26" name="MatrixSlider26" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider25.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider27" name="MatrixSlider27" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider26.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider28" name="MatrixSlider28" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider27.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider29" name="MatrixSlider29" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider28.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider30" name="MatrixSlider30" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider29.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider31" name="MatrixSlider31" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider30.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider32" name="MatrixSlider32" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider31.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider33" name="MatrixSlider33" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider32.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider34" name="MatrixSlider34" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider33.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider35" name="MatrixSlider35" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider34.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider36" name="MatrixSlider36" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider35.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider37" name="MatrixSlider37" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider36.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider38" name="MatrixSlider38" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider37.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider39" name="MatrixSlider39" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider38.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider40" name="MatrixSlider40" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider39.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider41" name="MatrixSlider41" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider40.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider42" name="MatrixSlider42" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider41.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider43" name="MatrixSlider43" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider42.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider44" name="MatrixSlider44" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider43.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider45" name="MatrixSlider45" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider44.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider46" name="MatrixSlider46" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider45.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider47" name="MatrixSlider47" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider46.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider48" name="MatrixSlider48" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider47.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider49" name="MatrixSlider49" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider48.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider50" name="MatrixSlider50" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider49.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider51" name="MatrixSlider51" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider50.right, 0, left + parent.width/52, parent.height" />
-                </slider>
-                <slider id="MatrixSlider52" name="MatrixSlider52" wtid="matrixfader">
-                    <bounds relativerectangle="MatrixSlider51.right, 0, left + parent.width/52, parent.height" />
-                </slider>
+            <component backgroundimage="TextY_MatrixSources_66x442-White.png" name="MatrixYText" id="matrixYText">
+                <bounds x="224" y="218" height="442" width="66" />
             </component>
-            <component backgroundimage="TextY_Backgr.png" name="MatrixYTextBackgr" id="matrixYTextBackgr">
-                <bounds x="248" y="213" height="428" width="63" />
+            <component backgroundimage="TextX_Matrix_Destinations693x82-White.png" name="MatrixXText" id="matrixXText">
+                <bounds x="289" y="135" height="82" width="693" />
             </component>
-            <component backgroundimage="TextY_MatrixSources_63x418.png" name="MatrixYText" id="matrixYText">
-                <bounds x="250" y="218" height="418" width="63" />
+            <component backgroundimage="Matrix676x442_0.png">
+                <bounds x="290" y="218" height="442" width="676" />
             </component>
-            <component backgroundimage="TextX_Backgr.png" name="MatrixXTextBackgr" id="matrixXTextBackgr">
-                <bounds x="312" y="138" height="76" width="640" />
-            </component>
-            <component backgroundimage="TextX_Matrix_Destinations640x76.png" name="MatrixXText" id="matrixXText">
-                <bounds x="312" y="138" height="76" width="640" />
+            <component name="Matrix" id="matrix" showcrosshair="true"
+                       verticalcrosshaircolour="5500ff00" verticalcrosshairthickness="13"
+                       horizontalcrosshaircolour="550000ff" horizontalcrosshairthickness="13"
+                       crosshairgridcubewidth="13" crosshairgridcubeheight="13"
+                       crosshairdetectfromx="65" crosshairdetectfromy="0" crosshairdetectheight="-1" crosshairdetectwidth="-1">
+                <bounds x="225" y="218" height="442" width="741" />
+                <component name="MatrixFaders" id="MatrixFaders">
+                    <bounds x="65" y="0" height="442" width="676" />
+                    <!--Fader Matrix 1-12-->
+                    <slider id="MatrixSlider1" name="MatrixSlider1" wtid="matrixfader">
+                        <bounds relativerectangle="0, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider2" name="MatrixSlider2" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider1.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider3" name="MatrixSlider3" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider2.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider4" name="MatrixSlider4" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider3.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider5" name="MatrixSlider5" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider4.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider6" name="MatrixSlider6" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider5.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider7" name="MatrixSlider7" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider6.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider8" name="MatrixSlider8" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider7.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider9" name="MatrixSlider9" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider8.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider10" name="MatrixSlider10" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider9.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider11" name="MatrixSlider11" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider10.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider12" name="MatrixSlider12" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider11.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <!--Fader Matrix 13-24-->
+                    <slider id="MatrixSlider13" name="MatrixSlider13" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider12.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider14" name="MatrixSlider14" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider13.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider15" name="MatrixSlider15" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider14.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider16" name="MatrixSlider16" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider15.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider17" name="MatrixSlider17" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider16.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider18" name="MatrixSlider18" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider17.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider19" name="MatrixSlider19" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider18.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider20" name="MatrixSlider20" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider19.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider21" name="MatrixSlider21" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider20.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider22" name="MatrixSlider22" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider21.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider23" name="MatrixSlider23" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider22.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider24" name="MatrixSlider24" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider23.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <!--Fader Matrix 25-remain -->
+                    <slider id="MatrixSlider25" name="MatrixSlider25" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider24.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider26" name="MatrixSlider26" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider25.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider27" name="MatrixSlider27" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider26.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider28" name="MatrixSlider28" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider27.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider29" name="MatrixSlider29" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider28.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider30" name="MatrixSlider30" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider29.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider31" name="MatrixSlider31" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider30.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider32" name="MatrixSlider32" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider31.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider33" name="MatrixSlider33" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider32.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider34" name="MatrixSlider34" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider33.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider35" name="MatrixSlider35" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider34.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider36" name="MatrixSlider36" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider35.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider37" name="MatrixSlider37" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider36.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider38" name="MatrixSlider38" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider37.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider39" name="MatrixSlider39" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider38.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider40" name="MatrixSlider40" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider39.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider41" name="MatrixSlider41" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider40.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider42" name="MatrixSlider42" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider41.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider43" name="MatrixSlider43" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider42.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider44" name="MatrixSlider44" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider43.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider45" name="MatrixSlider45" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider44.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider46" name="MatrixSlider46" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider45.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider47" name="MatrixSlider47" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider46.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider48" name="MatrixSlider48" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider47.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider49" name="MatrixSlider49" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider48.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider50" name="MatrixSlider50" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider49.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider51" name="MatrixSlider51" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider50.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                    <slider id="MatrixSlider52" name="MatrixSlider52" wtid="matrixfader">
+                        <bounds relativerectangle="MatrixSlider51.right, 0, left + parent.width/52, parent.height" />
+                    </slider>
+                </component>
             </component>
         </component>
     </layout>
