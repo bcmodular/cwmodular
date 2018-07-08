@@ -283,16 +283,14 @@
             file="../Assets/ModuleHeaderVelo_50x14.png"/>
       <FILE id="NANIaA" name="ModuleHeaderVolM_50x14.png" compile="0" resource="1"
             file="../Assets/ModuleHeaderVolM_50x14.png"/>
-      <FILE id="hnDrHL" name="Slider-Thumb.png" compile="0" resource="1"
-            file="../Assets/Slider-Thumb.png"/>
-      <FILE id="wtpEFz" name="Slider-ThumbBlTu.png" compile="0" resource="1"
-            file="../Assets/Slider-ThumbBlTu.png"/>
-      <FILE id="tmVfSn" name="Slider-ThumbBlWh.png" compile="0" resource="1"
-            file="../Assets/Slider-ThumbBlWh.png"/>
-      <FILE id="yPcWnJ" name="TextX_Matrix_Destinations693x82-White.png"
-            compile="0" resource="1" file="../Assets/TextX_Matrix_Destinations693x82-White.png"/>
-      <FILE id="lXAxXq" name="TextY_MatrixSources_66x442-White.png" compile="0"
-            resource="1" file="../Assets/TextY_MatrixSources_66x442-White.png"/>
+      <FILE id="T8r3FI" name="Slider-ThumbBlWh0.png" compile="0" resource="1"
+            file="../Assets/Slider-ThumbBlWh0.png"/>
+      <FILE id="qd6251" name="Slider-ThumbBlWh1.png" compile="0" resource="1"
+            file="../Assets/Slider-ThumbBlWh1.png"/>
+      <FILE id="bjjJGv" name="TextX_Matrix_DestNew677x98.png" compile="0"
+            resource="1" file="../Assets/TextX_Matrix_DestNew677x98.png"/>
+      <FILE id="FMv0Sq" name="TextY_Matrix_SrcNew84x449.png" compile="0"
+            resource="1" file="../Assets/TextY_Matrix_SrcNew84x449.png"/>
       <FILE id="ZCNIsA" name="ToggleSw0.png" compile="0" resource="1" file="../Assets/ToggleSw0.png"/>
       <FILE id="QH0Ku2" name="ToggleSw1.png" compile="0" resource="1" file="../Assets/ToggleSw1.png"/>
       <FILE id="mGqrHb" name="VUmeter.png" compile="0" resource="1" file="../Assets/VUmeter.png"/>

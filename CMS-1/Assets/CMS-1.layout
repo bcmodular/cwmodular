@@ -281,7 +281,7 @@
                 <appliesto componenttype="none" />
                 <images>
                     <slider nobackground="true">
-                        <linearvertical thumbfilename="Slider-ThumbBlWh.png" thumbmouseoverfilename="Slider-ThumbBlTu.png" thumbborder="0">
+                        <linearvertical thumbfilename="Slider-ThumbBlWh1.png" thumbmouseoverfilename="Slider-ThumbBlWh0.png" thumbborder="0">
                             <!--  <backgroundimage filename="slider-background.png" numframes="1"/>-->
                         </linearvertical>
                     </slider>
@@ -418,7 +418,7 @@
                     <bounds relativerectangle="right - 180, snapshot.top, midichannellabel.left - 5, snapshot.bottom" />
                     <font bold="true" height="14" />
                     <justification left="true" />
-                    <mappingparent componentname="PWR" componenttype="slider"/>
+                    <mappingparent componentname="PWR" componenttype="slider" />
                 </label>
                 <slider name="PWR" id="PWRSlider" style="linearbar" nostyleoverride="true" lfid="headercontrols" displaycontext="scope">
                     <bounds relativerectangle="right - 46, snapshot.top, midichannellabel.left - 5, snapshot.bottom" />
@@ -430,7 +430,7 @@
                     <bounds relativerectangle="right - 180, snapshot.top, deviceinstancelabel.left - 5, snapshot.bottom" />
                     <font bold="true" height="14" />
                     <justification left="true" />
-                    <mappingparent componentname="PWR" componenttype="slider"/>
+                    <mappingparent componentname="PWR" componenttype="slider" />
                 </label>
                 <slider name="PWR" id="PWRSlider" style="linearbar" nostyleoverride="true" lfid="headercontrols" displaycontext="host">
                     <bounds relativerectangle="right - 46, snapshot.top, deviceinstancelabel.left - 5, snapshot.bottom" />
@@ -1782,23 +1782,19 @@
                 </component>
             </component>
             <!--Fader Matrix-->
-            <component backgroundimage="TextY_MatrixSources_66x442-White.png" name="MatrixYText" id="matrixYText">
-                <bounds x="224" y="218" height="442" width="66" />
+            <component backgroundimage="TextY_Matrix_SrcNew84x449.png" name="MatrixYText" id="matrixYText">
+                <bounds x="221" y="214" height="449" width="84" />
             </component>
-            <component backgroundimage="TextX_Matrix_Destinations693x82-White.png" name="MatrixXText" id="matrixXText">
-                <bounds x="289" y="135" height="82" width="693" />
+            <component backgroundimage="TextX_Matrix_DestNew677x98.png" name="MatrixXText" id="matrixXText">
+                <bounds x="302" y="117" height="98" width="677" />
             </component>
             <component backgroundimage="Matrix676x442_0.png">
-                <bounds x="290" y="218" height="442" width="676" />
+                <bounds x="303" y="218" height="442" width="676" />
             </component>
-            <component name="Matrix" id="matrix" showcrosshair="true"
-                       verticalcrosshaircolour="5500ff00" verticalcrosshairthickness="13"
-                       horizontalcrosshaircolour="550000ff" horizontalcrosshairthickness="13"
-                       crosshairgridcubewidth="13" crosshairgridcubeheight="13"
-                       crosshairdetectfromx="65" crosshairdetectfromy="0" crosshairdetectheight="-1" crosshairdetectwidth="-1">
-                <bounds x="225" y="218" height="442" width="741" />
+            <component name="Matrix" id="matrix" showcrosshair="true" verticalcrosshaircolour="55a92400" verticalcrosshairthickness="13" horizontalcrosshaircolour="66365485" horizontalcrosshairthickness="13" crosshairgridcubewidth="13" crosshairgridcubeheight="13" crosshairdetectfromx="65" crosshairdetectfromy="91" crosshairdetectheight="-1" crosshairdetectwidth="-1">
+                <bounds x="239" y="127" height="533" width="741" />
                 <component name="MatrixFaders" id="MatrixFaders">
-                    <bounds x="65" y="0" height="442" width="676" />
+                    <bounds x="65" y="91" height="442" width="676" />
                     <!--Fader Matrix 1-12-->
                     <slider id="MatrixSlider1" name="MatrixSlider1" wtid="matrixfader">
                         <bounds relativerectangle="0, 0, left + parent.width/52, parent.height" />
