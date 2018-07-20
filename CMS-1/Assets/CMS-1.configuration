@@ -2658,9 +2658,9 @@
       </settings>
     </parameter>
     <parameter name="MatrixOut1Dest" shortDescription="Out1" fullDescription="Matrix Out1 Source" scopeParamGroup="13" scopeParamId="3"
-               scopeRangeMin="0" scopeRangeMax="2147483647" scopeDBRef="0.00000000000000000000" valueType="1" uiResetValue="0.00000000000000000000"
-               uiSkewFactor="1.00000000000000000000" skewUIOnly="0" uiRangeMin="0.00000000000000000000" uiRangeMax="33.00000000000000000000"
-               uiRangeInterval="1" uiSuffix="" uiSkewMidpoint="" pluginAutomatable="1" editableInScopeUI="1" editableInPluginUI="1">
+               scopeRangeMin="0" scopeRangeMax="2147483647" scopeDBRef="0.0" valueType="1" uiResetValue="0.0" uiSkewFactor="1.0" skewUIOnly="0"
+               uiRangeMin="0.0" uiRangeMax="33.0" uiRangeInterval="1" uiSuffix="" uiSkewMidpoint="" pluginAutomatable="1" editableInScopeUI="1"
+               editableInPluginUI="1">
       <settings uiRangeMin="0.00000000000000000000" uiSkewFactor="1.00000000000000000000" uiRangeMax="33.00000000000000000000" uiResetValue="0.00000000000000000000">
         <setting name="--" intValue="0"/>
         <setting name="OSC1" intValue="65075262"/>
@@ -2699,9 +2699,9 @@
       </settings>
     </parameter>
     <parameter name="MatrixOut2Dest" shortDescription="Out2" fullDescription="Matrix Out2 Source" scopeParamGroup="13" scopeParamId="4"
-               scopeRangeMin="0" scopeRangeMax="2147483647" scopeDBRef="0.00000000000000000000" valueType="1" uiResetValue="0.00000000000000000000"
-               uiSkewFactor="1.00000000000000000000" skewUIOnly="0" uiRangeMin="0.00000000000000000000" uiRangeMax="33.00000000000000000000"
-               uiRangeInterval="1" uiSuffix="" uiSkewMidpoint="" pluginAutomatable="1" editableInScopeUI="1" editableInPluginUI="1">
+               scopeRangeMin="0" scopeRangeMax="2147483647" scopeDBRef="0.0" valueType="1" uiResetValue="0.0" uiSkewFactor="1.0" skewUIOnly="0"
+               uiRangeMin="0.0" uiRangeMax="33.0" uiRangeInterval="1" uiSuffix="" uiSkewMidpoint="" pluginAutomatable="1" editableInScopeUI="1"
+               editableInPluginUI="1">
       <settings uiRangeMin="0.00000000000000000000" uiSkewFactor="1.00000000000000000000" uiRangeMax="33.00000000000000000000" uiResetValue="0.00000000000000000000">
         <setting name="--" intValue="0"/>
         <setting name="OSC1" intValue="65075262"/>
@@ -2739,6 +2739,15 @@
         <setting name="In 2" intValue="2147483647"/>
       </settings>
     </parameter>
+    <parameter name="MatrixBackgrSelect" shortDescription="MatrixBackgrSelect" fullDescription="MatrixBackgrSelect" scopeParamGroup="13"
+               scopeParamId="5" scopeRangeMin="0" scopeRangeMax="2147483647" scopeDBRef="0.0" valueType="1" uiResetValue="0.0" uiSkewFactor="1.0"
+               skewUIOnly="0" uiRangeMin="0.0" uiRangeMax="1.0" uiRangeInterval="1" uiSuffix="" uiSkewMidpoint="" pluginAutomatable="1"
+               editableInScopeUI="1" editableInPluginUI="1">
+      <settings uiRangeMin="0.00000000000000000000" uiSkewFactor="1.00000000000000000000" uiRangeMax="2.00000000000000000000" uiResetValue="0.00000000000000000000">
+        <setting name="MatrixBackgr1" intValue="0"/>
+        <setting name="MatrixBackgr2" intValue="2147483647"/>
+      </settings>
+    </parameter>
   </parameters>
   <mapping>
     <textButtons>
@@ -2766,6 +2775,7 @@
       <textButton name="SeqGt6" mapTo="SeqGt6" type="1" settingDown="SeqGt6On" displayType="0" settingUp="SeqGt6Off"/>
       <textButton name="SeqGt7" mapTo="SeqGt7" type="1" settingDown="SeqGt7On" displayType="0" settingUp="SeqGt7Off"/>
       <textButton name="SeqGt8" mapTo="SeqGt8" type="1" settingDown="SeqGt8On" displayType="0" settingUp="SeqGt8Off"/>
+      <textButton name="MatrixBackgrButton" mapTo="MatrixBackgrSelect" type="1" settingDown="MatrixBackgr2" settingUp="MatrixBackgr1"/>
     </textButtons>
     <sliders>
       <slider name="OSC1 Coarse" mapTo="OSC1 Coarse"/>
