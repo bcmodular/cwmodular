@@ -2617,9 +2617,9 @@
       </settings>
     </parameter>
     <parameter name="MatrixVU2InDest" shortDescription="VU2In" fullDescription="Matrix VU2In Source" scopeParamGroup="13" scopeParamId="2"
-               scopeRangeMin="0" scopeRangeMax="2147483647" scopeDBRef="0.00000000000000000000" valueType="1" uiResetValue="0.00000000000000000000"
-               uiSkewFactor="1.00000000000000000000" skewUIOnly="0" uiRangeMin="0.00000000000000000000" uiRangeMax="33.00000000000000000000"
-               uiRangeInterval="1" uiSuffix="" uiSkewMidpoint="" pluginAutomatable="1" editableInScopeUI="1" editableInPluginUI="1">
+               scopeRangeMin="0" scopeRangeMax="2147483647" scopeDBRef="0.0" valueType="1" uiResetValue="0.0" uiSkewFactor="1.0" skewUIOnly="0"
+               uiRangeMin="0.0" uiRangeMax="33.0" uiRangeInterval="1" uiSuffix="" uiSkewMidpoint="" pluginAutomatable="1" editableInScopeUI="1"
+               editableInPluginUI="1">
       <settings uiRangeMin="0.00000000000000000000" uiSkewFactor="1.00000000000000000000" uiRangeMax="33.00000000000000000000" uiResetValue="0.00000000000000000000">
         <setting name="--" intValue="0"/>
         <setting name="OSC1" intValue="65075262"/>
@@ -2741,11 +2741,12 @@
     </parameter>
     <parameter name="MatrixBackgrSelect" shortDescription="MatrixBackgrSelect" fullDescription="MatrixBackgrSelect" scopeParamGroup="13"
                scopeParamId="5" scopeRangeMin="0" scopeRangeMax="2147483647" scopeDBRef="0.0" valueType="1" uiResetValue="0.0" uiSkewFactor="1.0"
-               skewUIOnly="0" uiRangeMin="0.0" uiRangeMax="1.0" uiRangeInterval="1" uiSuffix="" uiSkewMidpoint="" pluginAutomatable="1"
+               skewUIOnly="0" uiRangeMin="0.0" uiRangeMax="2.0" uiRangeInterval="1" uiSuffix="" uiSkewMidpoint="" pluginAutomatable="1"
                editableInScopeUI="1" editableInPluginUI="1">
-      <settings uiRangeMin="0.00000000000000000000" uiSkewFactor="1.00000000000000000000" uiRangeMax="2.00000000000000000000" uiResetValue="0.00000000000000000000">
-        <setting name="MatrixBackgr1" intValue="0"/>
-        <setting name="MatrixBackgr2" intValue="2147483647"/>
+      <settings uiRangeMin="0.0" uiSkewFactor="1.0" uiRangeMax="2.0" uiResetValue="0.0">
+        <setting name="BG1" intValue="0"/>
+        <setting name="BG2" intValue="1073741824"/>
+        <setting name="BG3" intValue="2147483647"/>
       </settings>
     </parameter>
   </parameters>
@@ -2945,8 +2946,11 @@
       <slider name="PWR" mapTo="PWR"/>
     </sliders>
     <labels/>
-    <comboBoxes/>
+    <comboBoxes>
+      <comboBox name="BackgroundChooser" mapTo="MatrixBackgrSelect"/>
+    </comboBoxes>
     <tabbedComponents>
+      <tabbedComponent name="MatrixTC" mapTo="MatrixBackgrSelect"/>
       <tabbedComponent name="FreqSrcTabs" mapTo="LFOFreqSrc"/>
       <tabbedComponent name="SeqFreqSrcTabs" mapTo="SeqFrqSrc"/>
     </tabbedComponents>

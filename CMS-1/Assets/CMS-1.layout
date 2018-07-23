@@ -312,6 +312,14 @@
                     <popupmenu textcolourid="ffdbdbdb" backgroundcolourid="ff262d32" highlightedbackgroundcolourid="ffdbdbdb" highlightedtextcolourid="ff262d32" />
                 </colours>
             </lookandfeel>
+            <lookandfeel id="matrixchooser" parentid="headercontrols">
+                <appliesto componenttype="none" />
+                <colours>
+                    <combobox backgroundcolourid="00000000" textcolourid="ffffffff" outlinecolourid="00000000" buttoncolourid="ffffffff" arrowcolourid="ffffffff" focusedoutlinecolourid="00000000" />
+                    <label textcolourid="ffffffff" outlinecolourid="00000000" />
+                    <popupmenu textcolourid="ffffffff" backgroundcolourid="ff262d32" highlightedbackgroundcolourid="ffdbdbdb" highlightedtextcolourid="ff262d32" />
+                </colours>
+            </lookandfeel>
         </lookandfeels>
         <widgettemplates>
             <!-- We set up a WidgetTemplate for our labels here, in case we want to change things like font height -->
@@ -440,17 +448,36 @@
                 </slider>
             </component>
             <!--Fader Matrix-->
-            <component backgroundimage="TextY_Matrix_SrcNew84x449.png" name="MatrixYText" id="matrixYText">
-                <bounds x="221" y="214" height="449" width="84" />
+            <component backgroundimage="TextY_Matrix_Src.png" name="MatrixYText" id="matrixYText">
+                <bounds x="221" y="214" height="448" width="83" />
             </component>
-            <component backgroundimage="TextX_Matrix_DestNew677x98.png" name="MatrixXText" id="matrixXText">
+            <component backgroundimage="TextX_Matrix_Dest.png" name="MatrixXText" id="matrixXText">
                 <bounds x="302" y="117" height="98" width="677" />
             </component>
-            <component backgroundimage="Matrix676x442_0.png">
+            <tabbedcomponent id="MatrixTC" name="MatrixTC" showdropshadow="false">
                 <bounds x="303" y="218" height="442" width="676" />
-            </component>
+                <tab idx="0" name="MatrixBG1">
+                    <component backgroundimage="Matrix676x442_0.png">
+                        <bounds relativerectangle="0, 0, 676, 442" />
+                    </component>
+                </tab>
+                <tab idx="1" name="MatrixBG2">
+                    <component backgroundimage="Matrix676x442_Color0.png">
+                        <bounds relativerectangle="0, 0, 676, 442" />
+                    </component>
+                </tab>
+                <tab idx="2" name="MatrixBG3">
+                    <component backgroundimage="Matrix676x442_Color3.png">
+                        <bounds relativerectangle="0, 0, 676, 442" />
+                    </component>
+                </tab>
+            </tabbedcomponent>
             <component name="Matrix" id="matrix" showcrosshair="true" verticalcrosshaircolour="55a92400" verticalcrosshairthickness="13" horizontalcrosshaircolour="66365485" horizontalcrosshairthickness="13" crosshairgridcubewidth="13" crosshairgridcubeheight="13" crosshairdetectfromx="65" crosshairdetectfromy="91" crosshairdetectheight="-1" crosshairdetectwidth="-1">
                 <bounds x="239" y="127" height="533" width="741" />
+                <combobox name="BackgroundChooser" id="BackgroundChooser" nostyleoverride="true" lfid="matrixchooser" editabletext="false" tooltip="Choose Matrix Background">
+                    <bounds x="0" y="65" width="66" height="25" />
+                    <justification right="true" />
+                </combobox>
                 <component name="MatrixFaders" id="MatrixFaders">
                     <bounds x="65" y="91" height="442" width="676" />
                     <!--Fader Matrix 1-12-->

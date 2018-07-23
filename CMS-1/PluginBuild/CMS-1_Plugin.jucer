@@ -206,6 +206,8 @@
             file="../Assets/50x50_CMS_-+100.png"/>
       <FILE id="F0tZPi" name="50x50_CMS_-127to127.png" compile="0" resource="1"
             file="../Assets/50x50_CMS_-127to127.png"/>
+      <FILE id="kX2fxY" name="backgr1.png" compile="0" resource="1" file="../Assets/backgr1.png"/>
+      <FILE id="x8F9J9" name="backgr2.png" compile="0" resource="1" file="../Assets/backgr2.png"/>
       <FILE id="kCCMzl" name="button-off.png" compile="0" resource="1" file="../Assets/button-off.png"/>
       <FILE id="UtaM3y" name="button-on.png" compile="0" resource="1" file="../Assets/button-on.png"/>
       <FILE id="FWXIGf" name="CMS-1.configuration" compile="0" resource="1"
@@ -215,6 +217,10 @@
       <FILE id="Pm1RnF" name="line_1x63.png" compile="0" resource="1" file="../Assets/line_1x63.png"/>
       <FILE id="kW3tVl" name="Matrix676x442_0.png" compile="0" resource="1"
             file="../Assets/Matrix676x442_0.png"/>
+      <FILE id="ACtFVl" name="Matrix676x442_Color0.png" compile="0" resource="1"
+            file="../Assets/Matrix676x442_Color0.png"/>
+      <FILE id="dyasmX" name="Matrix676x442_Color3.png" compile="0" resource="1"
+            file="../Assets/Matrix676x442_Color3.png"/>
       <FILE id="bR2Phg" name="MidiActivity-Off.png" compile="0" resource="1"
             file="../Assets/MidiActivity-Off.png"/>
       <FILE id="MXQHEW" name="MidiActivity-On.png" compile="0" resource="1"
@@ -287,10 +293,10 @@
             file="../Assets/Slider-ThumbBlWh0.png"/>
       <FILE id="qd6251" name="Slider-ThumbBlWh1.png" compile="0" resource="1"
             file="../Assets/Slider-ThumbBlWh1.png"/>
-      <FILE id="bjjJGv" name="TextX_Matrix_DestNew677x98.png" compile="0"
-            resource="1" file="../Assets/TextX_Matrix_DestNew677x98.png"/>
-      <FILE id="FMv0Sq" name="TextY_Matrix_SrcNew84x449.png" compile="0"
-            resource="1" file="../Assets/TextY_Matrix_SrcNew84x449.png"/>
+      <FILE id="jKqVpI" name="TextX_Matrix_Dest.png" compile="0" resource="1"
+            file="../Assets/TextX_Matrix_Dest.png"/>
+      <FILE id="Nqz5Bj" name="TextY_Matrix_Src.png" compile="0" resource="1"
+            file="../Assets/TextY_Matrix_Src.png"/>
       <FILE id="ZCNIsA" name="ToggleSw0.png" compile="0" resource="1" file="../Assets/ToggleSw0.png"/>
       <FILE id="QH0Ku2" name="ToggleSw1.png" compile="0" resource="1" file="../Assets/ToggleSw1.png"/>
       <FILE id="mGqrHb" name="VUmeter.png" compile="0" resource="1" file="../Assets/VUmeter.png"/>
